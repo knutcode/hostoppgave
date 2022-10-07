@@ -1,12 +1,7 @@
-import "./assets/Global.css";
-import HelloWorld from "./components/helloworld/HelloWorld";
+import "./App.css";
 
 function App() {
-	return (
-		<div className="App">
-			<HelloWorld />
-		</div>
-	);
+	return <div className="App"></div>;
 }
 
 export default App;
