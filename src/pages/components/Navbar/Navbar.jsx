@@ -4,16 +4,23 @@ import ContactPage from "../../contactPage";
 import ErrorPage from "../../errorPage";
 import LandingPage from "../../homePage";
 import PlanetsPage from "../../planetsPage";
-import { StyledLink } from "./style";
+import * as s from "./style";
 
 const Navbar = () => {
 	return (
 		<>
-			<nav>
-				<StyledLink to="/">Home</StyledLink>
-				<StyledLink to="/planets">Planets</StyledLink>
-				<StyledLink to="/contact">Contact</StyledLink>
-			</nav>
+			<s.Nav>
+				<s.StyledNav>
+					<h2>
+						Lo<s.LogoSpan>go</s.LogoSpan>
+					</h2>
+					<s.NavLinks>
+						<s.StyledLink to="/">Home</s.StyledLink>
+						<s.StyledLink to="/planets">Planets</s.StyledLink>
+						<s.StyledLink to="/contact">Contact</s.StyledLink>
+					</s.NavLinks>
+				</s.StyledNav>
+			</s.Nav>
 			<Routes>
 				<Route path="/" element={<LandingPage />} />
 				<Route path="/planets" element={<PlanetsPage />} />

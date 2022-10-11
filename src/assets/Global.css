@@ -15,14 +15,15 @@
 
 :root {
 	/*Miscellaneous*/
-	--color-bg: #1d1d1d;
+	--color-bg: linear-gradient(#1f365a, #000);
+	--color-primary: rgb(6, 212, 227);
 	--color-white: #fff;
 
 	--transition: all 400ms ease;
 
 	--border: 2px;
 
-	--container-width-large: 75%;
+	--container-width-large: 90%;
 	--container-width-medium: 86%;
 	--container-width-small: 90%;
 }
@@ -39,15 +40,25 @@ body {
 	color: var(--color-white);
 	/*Miscellaneous*/
 	line-height: 1.7;
+	font-family: sans-serif;
 }
 
 .container {
 	/*Box model stuff*/
 	width: var(--container-width-large);
 	margin: 0 auto;
+	padding-top: 5rem;
 }
 
 section {
 	/*Box model stuff*/
 	min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	margin: 0;
 }
