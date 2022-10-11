@@ -3,9 +3,9 @@ import React from "react";
 const HomePage = () => {
 	return (
 		<>
-			<section>
+			<main>
 				<div className="container">HomePage</div>
-			</section>
+			</main>
 		</>
 	);
 };
