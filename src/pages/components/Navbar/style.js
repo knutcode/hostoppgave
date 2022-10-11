@@ -3,6 +3,16 @@ import styled from "styled-components";
 
 export const StyledLink = styled(Link)`
 	color: var(--color-white);
+
+	&:hover {
+		color: var(--color-primary);
+		border-bottom: 1px solid var(--color-primary);
+	}
+
+	&.active {
+		color: var(--color-primary);
+		border-bottom: 1px solid var(--color-primary);
+	}
 `;
 
 export const LogoSpan = styled.span`
