@@ -1,11 +1,12 @@
 import React from "react";
+import * as s from "./style";
 
 const HomePage = () => {
 	return (
 		<>
-			<main>
+			<s.Main>
 				<div className="container">HomePage</div>
-			</main>
+			</s.Main>
 		</>
 	);
 };
