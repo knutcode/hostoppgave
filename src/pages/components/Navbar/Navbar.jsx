@@ -7,7 +7,7 @@ import PlanetsPage from "../../planetsPage";
 import * as s from "./style";
 
 const Navbar = () => {
-	const [activeNav, setActiveNav] = useState("active");
+	const [activeNav, setActiveNav] = useState("home");
 
 	return (
 		<>
@@ -17,13 +17,25 @@ const Navbar = () => {
 						Lo<s.LogoSpan>go</s.LogoSpan>
 					</h2>
 					<s.NavLinks>
-						<s.StyledLink to="/" className={activeNav}>
+						<s.StyledLink
+							to="/"
+							className={activeNav === "home" ? "active" : ""}
+							onClick={() => setActiveNav("home")}
+						>
 							Home
 						</s.StyledLink>
-						<s.StyledLink to="/planets" className={activeNav}>
+						<s.StyledLink
+							to="/planets"
+							className={activeNav === "planets" ? "active" : ""}
+							onClick={() => setActiveNav("planets")}
+						>
 							Planets
 						</s.StyledLink>
-						<s.StyledLink to="/contact" className={activeNav}>
+						<s.StyledLink
+							to="/contact"
+							className={activeNav === "contact" ? "active" : ""}
+							onClick={() => setActiveNav("contact")}
+						>
 							Contact
 						</s.StyledLink>
 					</s.NavLinks>
