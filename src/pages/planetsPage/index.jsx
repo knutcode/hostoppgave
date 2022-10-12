@@ -1,32 +1,31 @@
 import React from "react";
-import SideNavbar from "./components/SideNavbar";
-import * as s from "./style";
+import Earth from "./components/earth/Earth";
+import Jupiter from "./components/jupiter/Jupiter";
+import Mars from "./components/mars/Mars";
+import Mercury from "./components/mercury/Mercury";
+import Moon from "./components/moon/Moon";
+import Neptune from "./components/neptune/Neptune";
+import Saturn from "./components/saturn/Saturn";
+import SideNavbar from "./components/sideNavbar/SideNavbar";
+import Sun from "./components/sun/Sun";
+import Uranus from "./components/uranus/Uranus";
+import Venus from "./components/venus/Venus";
 
 const PlanetsPage = () => {
 	return (
 		<>
 			<div className="container" style={{ padding: 0 }}>
 				<SideNavbar />
-				<s.Section id="sun">
-					<s.PlanetContainer>
-						<s.PlanetApiLinks>
-							<s.PlanetApiLink href="">api 1</s.PlanetApiLink>
-							<s.PlanetApiLink>api 2</s.PlanetApiLink>
-							<s.PlanetApiLink>api 3</s.PlanetApiLink>
-						</s.PlanetApiLinks>
-						<s.Planet />
-					</s.PlanetContainer>
-					<s.PlanetInfoContainer></s.PlanetInfoContainer>
-				</s.Section>
-				<s.Section id="mercury"></s.Section>
-				<s.Section id="venus"></s.Section>
-				<s.Section id="earth"></s.Section>
-				<s.Section id="moon"></s.Section>
-				<s.Section id="mars"></s.Section>
-				<s.Section id="jupiter"></s.Section>
-				<s.Section id="saturn"></s.Section>
-				<s.Section id="uranus"></s.Section>
-				<s.Section id="neptune"></s.Section>
+				<Sun />
+				<Mercury />
+				<Venus />
+				<Earth />
+				<Moon />
+				<Mars />
+				<Jupiter />
+				<Saturn />
+				<Uranus />
+				<Neptune />
 			</div>
 		</>
 	);

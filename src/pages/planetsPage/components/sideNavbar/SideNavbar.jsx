@@ -1,5 +1,5 @@
 import { Link } from "react-scroll";
-import * as s from "../style";
+import * as s from "../../style";
 
 import React from "react";
 
