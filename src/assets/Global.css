@@ -30,9 +30,14 @@
 	--container-width-small: 90%;
 }
 
+::-webkit-scrollbar {
+	display: none; /* Remove scrollbar for Chrome, Safari, Microsoft Edge and Opera */
+}
+
 html {
 	/*Miscellaneous*/
 	scroll-behavior: smooth;
+	scrollbar-width: none; /* Remove scrollbar for Firefox */
 }
 
 body {
