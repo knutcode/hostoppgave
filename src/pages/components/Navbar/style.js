@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 export const StyledLink = styled(Link)`
 	color: var(--color-white);
+	transition: var(--transition);
 
 	&:hover {
 		color: var(--color-primary);
