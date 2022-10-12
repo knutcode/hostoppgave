@@ -36,6 +36,7 @@ html {
 body {
 	/*Box model stuff*/
 	background: var(--color-bg);
+	background-attachment: fixed;
 	/*Typography stuff*/
 	color: var(--color-white);
 	/*Miscellaneous*/
