@@ -91,7 +91,6 @@ export const Api_Link = styled.h3`
 
 export const Planet_Name = styled.h1`
 	font-size: 3.5rem;
-	/* font-family: Ailerons, sans-serif; */
 	font-family: AstroSpace, sans-serif;
 `;
 
