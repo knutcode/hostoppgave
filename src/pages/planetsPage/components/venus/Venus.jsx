@@ -19,7 +19,7 @@ const Venus = () => {
 				</s.Planet_Container>
 
 				<s.Info_Container>
-					<div style={{ maxWidth: "50rem" }}>
+					<s.Info_Container_Div>
 						<s.Api_Links>
 							<s.Api_Link>api 1</s.Api_Link>
 							<s.Api_Link>api 2</s.Api_Link>
@@ -39,7 +39,7 @@ const Venus = () => {
 							suggests it could have had one in the past.
 						</s.Info_Text>
 						<s.Info_Container_Underline />
-					</div>
+					</s.Info_Container_Div>
 				</s.Info_Container>
 			</s.Section>
 		</>

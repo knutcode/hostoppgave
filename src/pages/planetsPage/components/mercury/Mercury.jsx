@@ -19,7 +19,7 @@ const Mercury = () => {
 				</s.Planet_Container>
 
 				<s.Info_Container>
-					<div style={{ maxWidth: "50rem" }}>
+					<s.Info_Container_Div>
 						<s.Api_Links>
 							<s.Api_Link>api 1</s.Api_Link>
 							<s.Api_Link>api 2</s.Api_Link>
@@ -38,7 +38,7 @@ const Mercury = () => {
 							how these elements are distributed across the Solar System.
 						</s.Info_Text>
 						<s.Info_Container_Underline />
-					</div>
+					</s.Info_Container_Div>
 				</s.Info_Container>
 			</s.Section>
 		</>

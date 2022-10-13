@@ -4,6 +4,12 @@ import styled from "styled-components";
 export const Section = styled.section`
 	display: flex;
 	margin-left: 7.8rem;
+
+	@media screen and (max-width: 1300px) {
+		align-items: center;
+		flex-direction: column;
+		padding-top: 5rem;
+	}
 `;
 
 ////////////////////////////////////////////////////////////////////////////////////////////
@@ -12,7 +18,6 @@ export const Section = styled.section`
 //
 ////////////////////////////////////////////////////////////////////////////////////////////
 export const Planet_Container = styled.div`
-	/* background-color: red; */
 	width: 50%;
 	display: flex;
 	gap: 1rem;
@@ -41,6 +46,11 @@ export const Planet = styled.div`
 	border-radius: 50%;
 	position: relative;
 	display: grid;
+
+	@media screen and (max-width: 1300px) {
+		width: 16rem;
+		margin-top: 2.5rem;
+	}
 `;
 
 export const Img = styled.img`
@@ -79,6 +89,14 @@ export const Info_Container = styled.div`
 	align-items: center;
 `;
 
+export const Info_Container_Div = styled.div`
+	max-width: 70%;
+
+	@media screen and (max-width: 1300px) {
+		max-width: 100%;
+	}
+`;
+
 export const Api_Links = styled.div`
 	display: flex;
 	gap: 1rem;
@@ -113,4 +131,8 @@ export const Info_Container_Underline = styled.div`
 	width: 100%;
 	height: 1px;
 	border-bottom: 1px solid var(--color-white);
+
+	@media screen and (max-width: 1300px) {
+		margin-bottom: 5rem;
+	}
 `;
