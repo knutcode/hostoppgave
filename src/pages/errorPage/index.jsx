@@ -1,8 +1,12 @@
-import React from "react";
+import React from 'react';
 // import * as s from "./style";
 
 const ErrorPage = () => {
-	return <div>404 Error, page not found.</div>;
+	return (
+		<section>
+			<div className="container">404 - Page Not Found! :(</div>
+		</section>
+	);
 };
 
 export default ErrorPage;
