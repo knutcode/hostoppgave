@@ -13,6 +13,10 @@ const Earth = () => {
 						<s.ApiInfo>Api Info</s.ApiInfo>
 						<s.ApiLineAngled></s.ApiLineAngled>
 					</s.Planet>
+					<a href="https://www.freepik.com/free-vector/sun-moon-mercury-venus-earth-mars-jupiter-saturn-uranus-neptun-colorful-planets-set_13768792.htm#query=planets&position=23&from_view=keyword">
+						Image by macrovector
+					</a>{" "}
+					on Freepik
 				</s.PlanetContainer>
 				<s.PlanetInfoContainer>
 					<div>
