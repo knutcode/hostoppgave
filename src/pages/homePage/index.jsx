@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import * as s from './style';
 
 const HomePage = () => {
@@ -10,7 +11,9 @@ const HomePage = () => {
 					<s.Headline>SOLAR SYSTEM</s.Headline>
 					<s.HeroLine />
 					<s.HeroText>Lorem ipsum doler sit amet</s.HeroText>
-					<s.HeroBtn>Get informed</s.HeroBtn>
+					<Link to="/planets">
+						<s.HeroBtn>Get informed</s.HeroBtn>
+					</Link>
 				</s.HeroContainer>
 
 				<s.PlanetContainer />
