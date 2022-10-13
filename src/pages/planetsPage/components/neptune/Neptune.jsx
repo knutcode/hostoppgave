@@ -6,24 +6,25 @@ const Neptune = () => {
 	return (
 		<>
 			<s.Section id="neptune">
-				<s.PlanetContainer>
+				<s.Planet_Container>
 					<s.Planet>
 						<s.Img src={NEPTUNE} alt="neptune" />
 
-						<s.ApiInfo>Api Info</s.ApiInfo>
-						<s.ApiLineAngled></s.ApiLineAngled>
+						<s.Api_Info>Api Info</s.Api_Info>
+						<s.Angled_Line />
 					</s.Planet>
-				</s.PlanetContainer>
-				<s.PlanetInfoContainer>
+				</s.Planet_Container>
+
+				<s.Info_Container>
 					<div>
-						<s.PlanetApiLinks>
-							<s.PlanetApiLink>api 1</s.PlanetApiLink>
-							<s.PlanetApiLink>api 2</s.PlanetApiLink>
-							<s.PlanetApiLink>api 3</s.PlanetApiLink>
-						</s.PlanetApiLinks>
-						<s.PlanetName>NEPTUNE</s.PlanetName>
-						<s.PlanetInfoHeadline>Neptune has supersonic winds. </s.PlanetInfoHeadline>
-						<s.PlanetInfoText>
+						<s.Api_Links>
+							<s.Api_Link>api 1</s.Api_Link>
+							<s.Api_Link>api 2</s.Api_Link>
+							<s.Api_Link>api 3</s.Api_Link>
+						</s.Api_Links>
+						<s.Planet_Name>NEPTUNE</s.Planet_Name>
+						<s.Info_Headline>Neptune has supersonic winds. </s.Info_Headline>
+						<s.Info_Text>
 							While on Earth we are concerned about hurricanes, the strength of these
 							storms is nowhere near what you would find on Neptune. At its highest
 							altitudes, according to NASA, winds blow at more than 1,100 miles per
@@ -31,10 +32,10 @@ const Neptune = () => {
 							than the speed of sound on Earth, at sea level. Why Neptune is so
 							blustery is a mystery, especially considering the Sun's heat is so
 							little at its distance.
-						</s.PlanetInfoText>
-						<s.InfoContainerDivider />
+						</s.Info_Text>
+						<s.Info_Container_Underline />
 					</div>
-				</s.PlanetInfoContainer>
+				</s.Info_Container>
 			</s.Section>
 		</>
 	);

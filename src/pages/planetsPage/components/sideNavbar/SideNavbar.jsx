@@ -6,7 +6,7 @@ import React from "react";
 const SideNavbar = () => {
 	return (
 		<>
-			<s.SideNav>
+			<s.Side_Navbar>
 				<Link to="mercury" spy={true} smooth={true} offset={0} duration={400}>
 					Mercury
 				</Link>
@@ -31,7 +31,7 @@ const SideNavbar = () => {
 				<Link to="neptune" spy={true} smooth={true} offset={0} duration={400}>
 					Neptune
 				</Link>
-			</s.SideNav>
+			</s.Side_Navbar>
 		</>
 	);
 };

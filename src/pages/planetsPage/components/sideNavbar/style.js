@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const SideNav = styled.nav`
+export const Side_Navbar = styled.nav`
 	font-size: 1.3rem;
 	display: flex;
 	gap: 1.9rem;

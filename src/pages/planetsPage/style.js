@@ -7,7 +7,7 @@ export const Section = styled.section`
 `;
 
 // Planet Container
-export const PlanetContainer = styled.div`
+export const Planet_Container = styled.div`
 	/* background-color: red; */
 	width: 50%;
 	display: flex;
@@ -31,7 +31,7 @@ export const Img = styled.img`
 	margin: auto;
 `;
 
-export const ApiInfo = styled.h4`
+export const Api_Info = styled.h4`
 	border-bottom: 2px solid var(--color-white);
 	position: absolute;
 	left: 22.7rem;
@@ -40,7 +40,7 @@ export const ApiInfo = styled.h4`
 	width: max-content;
 `;
 
-export const ApiLineAngled = styled.div`
+export const Angled_Line = styled.div`
 	border-top: 2px solid var(--color-white);
 	width: 2rem;
 	position: absolute;
@@ -50,7 +50,7 @@ export const ApiLineAngled = styled.div`
 `;
 
 // Planet Info Container
-export const PlanetInfoContainer = styled.div`
+export const Info_Container = styled.div`
 	width: 50%;
 	display: flex;
 	flex-direction: column;
@@ -58,29 +58,29 @@ export const PlanetInfoContainer = styled.div`
 	align-items: center;
 `;
 
-export const PlanetApiLinks = styled.div`
+export const Api_Links = styled.div`
 	display: flex;
 	gap: 1rem;
 	margin-bottom: 2rem;
 `;
 
-export const PlanetApiLink = styled.h4`
+export const Api_Link = styled.h4`
 	font-weight: 400;
 `;
 
-export const PlanetName = styled.h1`
+export const Planet_Name = styled.h1`
 	font-size: 3.5rem;
 `;
 
-export const PlanetInfoHeadline = styled.h3`
+export const Info_Headline = styled.h3`
 	margin-block: 2rem;
 `;
 
-export const PlanetInfoText = styled.h5`
+export const Info_Text = styled.h5`
 	margin-block: 2rem;
 `;
 
-export const InfoContainerDivider = styled.div`
+export const Info_Container_Underline = styled.div`
 	width: 100%;
 	height: 1px;
 	border-bottom: 1px solid var(--color-white);

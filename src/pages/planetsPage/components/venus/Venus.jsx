@@ -6,25 +6,27 @@ const Venus = () => {
 	return (
 		<>
 			<s.Section id="venus">
-				<s.PlanetContainer>
+				<s.Planet_Container>
 					<s.Planet>
 						<s.Img src={VENUS} alt="venus" />
-						<s.ApiInfo>Api Info</s.ApiInfo>
-						<s.ApiLineAngled></s.ApiLineAngled>
+
+						<s.Api_Info>Api Info</s.Api_Info>
+						<s.Angled_Line />
 					</s.Planet>
-				</s.PlanetContainer>
-				<s.PlanetInfoContainer>
+				</s.Planet_Container>
+
+				<s.Info_Container>
 					<div>
-						<s.PlanetApiLinks>
-							<s.PlanetApiLink>api 1</s.PlanetApiLink>
-							<s.PlanetApiLink>api 2</s.PlanetApiLink>
-							<s.PlanetApiLink>api 3</s.PlanetApiLink>
-						</s.PlanetApiLinks>
-						<s.PlanetName>VENUS</s.PlanetName>
-						<s.PlanetInfoHeadline>
+						<s.Api_Links>
+							<s.Api_Link>api 1</s.Api_Link>
+							<s.Api_Link>api 2</s.Api_Link>
+							<s.Api_Link>api 3</s.Api_Link>
+						</s.Api_Links>
+						<s.Planet_Name>VENUS</s.Planet_Name>
+						<s.Info_Headline>
 							Venus doesn't have any moons, and we aren't sure why.
-						</s.PlanetInfoHeadline>
-						<s.PlanetInfoText>
+						</s.Info_Headline>
+						<s.Info_Text>
 							Both Mercury and Venus have no moons, which can be considered a surprise
 							given there are dozens of other ones around the Solar System. Saturn has
 							over 60, for example. And some moons are little more than captured
@@ -32,10 +34,10 @@ const Venus = () => {
 							example. So what makes these planets different? No one is really sure
 							why Venus doesn't, but there is at least one stream of research that
 							suggests it could have had one in the past.
-						</s.PlanetInfoText>
-						<s.InfoContainerDivider />
+						</s.Info_Text>
+						<s.Info_Container_Underline />
 					</div>
-				</s.PlanetInfoContainer>
+				</s.Info_Container>
 			</s.Section>
 		</>
 	);

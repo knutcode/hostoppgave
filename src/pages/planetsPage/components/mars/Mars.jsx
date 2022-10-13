@@ -6,26 +6,27 @@ const Mars = () => {
 	return (
 		<>
 			<s.Section id="mars">
-				<s.PlanetContainer>
+				<s.Planet_Container>
 					<s.Planet>
 						<s.Img src={MARS} alt="mars" />
 
-						<s.ApiInfo>Api Info</s.ApiInfo>
-						<s.ApiLineAngled></s.ApiLineAngled>
+						<s.Api_Info>Api Info</s.Api_Info>
+						<s.Angled_Line />
 					</s.Planet>
-				</s.PlanetContainer>
-				<s.PlanetInfoContainer>
+				</s.Planet_Container>
+
+				<s.Info_Container>
 					<div>
-						<s.PlanetApiLinks>
-							<s.PlanetApiLink>api 1</s.PlanetApiLink>
-							<s.PlanetApiLink>api 2</s.PlanetApiLink>
-							<s.PlanetApiLink>api 3</s.PlanetApiLink>
-						</s.PlanetApiLinks>
-						<s.PlanetName>MARS</s.PlanetName>
-						<s.PlanetInfoHeadline>
+						<s.Api_Links>
+							<s.Api_Link>api 1</s.Api_Link>
+							<s.Api_Link>api 2</s.Api_Link>
+							<s.Api_Link>api 3</s.Api_Link>
+						</s.Api_Links>
+						<s.Planet_Name>MARS</s.Planet_Name>
+						<s.Info_Headline>
 							Mars had a thicker atmosphere in the past.
-						</s.PlanetInfoHeadline>
-						<s.PlanetInfoText>
+						</s.Info_Headline>
+						<s.Info_Text>
 							What a bunch of contrasts in the inner Solar System: practically
 							atmosphere-less Mercury, a runaway hothouse greenhouse effect happening
 							in Venus' thick atmosphere, temperate conditions on much of Earth and
@@ -35,10 +36,10 @@ const Mars = () => {
 							scientists believe it's because the Sun's energy pushed the lighter
 							molecules out of Mars' atmosphere over millions of years, decreasing the
 							thickness over time.
-						</s.PlanetInfoText>
-						<s.InfoContainerDivider />
+						</s.Info_Text>
+						<s.Info_Container_Underline />
 					</div>
-				</s.PlanetInfoContainer>
+				</s.Info_Container>
 			</s.Section>
 		</>
 	);

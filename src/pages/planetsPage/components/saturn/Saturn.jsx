@@ -6,26 +6,25 @@ const Saturn = () => {
 	return (
 		<>
 			<s.Section id="saturn">
-				<s.PlanetContainer>
+				<s.Planet_Container>
 					<s.Planet>
 						<s.Img src={SATURN} alt="saturn" />
 
-						<s.ApiInfo>Api Info</s.ApiInfo>
-						<s.ApiLineAngled></s.ApiLineAngled>
+						<s.Api_Info>Api Info</s.Api_Info>
+						<s.Angled_Line />
 					</s.Planet>
-				</s.PlanetContainer>
-				<s.PlanetInfoContainer>
+				</s.Planet_Container>
+
+				<s.Info_Container>
 					<div>
-						<s.PlanetApiLinks>
-							<s.PlanetApiLink>api 1</s.PlanetApiLink>
-							<s.PlanetApiLink>api 2</s.PlanetApiLink>
-							<s.PlanetApiLink>api 3</s.PlanetApiLink>
-						</s.PlanetApiLinks>
-						<s.PlanetName>SATURN</s.PlanetName>
-						<s.PlanetInfoHeadline>
-							No one knows how old Saturn's rings are
-						</s.PlanetInfoHeadline>
-						<s.PlanetInfoText>
+						<s.Api_Links>
+							<s.Api_Link>api 1</s.Api_Link>
+							<s.Api_Link>api 2</s.Api_Link>
+							<s.Api_Link>api 3</s.Api_Link>
+						</s.Api_Links>
+						<s.Planet_Name>SATURN</s.Planet_Name>
+						<s.Info_Headline>No one knows how old Saturn's rings are</s.Info_Headline>
+						<s.Info_Text>
 							There's a field of ice and rock debris circling Saturn that from afar,
 							appear as rings. Early telescope observations of the planet in the 1600s
 							caused some confusion: does that planet have ears, or moons, or what?
@@ -35,10 +34,10 @@ const Saturn = () => {
 							rings. Or, maybe they've been around (pun intended) for the last few
 							billion years, unable to coalesce into a larger body but resistant
 							enough to gravity not to break up.
-						</s.PlanetInfoText>
-						<s.InfoContainerDivider />
+						</s.Info_Text>
+						<s.Info_Container_Underline />
 					</div>
-				</s.PlanetInfoContainer>
+				</s.Info_Container>
 			</s.Section>
 		</>
 	);

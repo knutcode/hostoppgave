@@ -6,26 +6,25 @@ const Mercury = () => {
 	return (
 		<>
 			<s.Section id="mercury">
-				<s.PlanetContainer>
+				<s.Planet_Container>
 					<s.Planet>
 						<s.Img src={MERCURY} alt="mercury" />
 
-						<s.ApiInfo>Api Info</s.ApiInfo>
-						<s.ApiLineAngled></s.ApiLineAngled>
+						<s.Api_Info>Api Info</s.Api_Info>
+						<s.Angled_Line />
 					</s.Planet>
-				</s.PlanetContainer>
-				<s.PlanetInfoContainer>
+				</s.Planet_Container>
+
+				<s.Info_Container>
 					<div>
-						<s.PlanetApiLinks>
-							<s.PlanetApiLink>api 1</s.PlanetApiLink>
-							<s.PlanetApiLink>api 2</s.PlanetApiLink>
-							<s.PlanetApiLink>api 3</s.PlanetApiLink>
-						</s.PlanetApiLinks>
-						<s.PlanetName>MERCURY</s.PlanetName>
-						<s.PlanetInfoHeadline>
-							Mercury is hot, but not too hot for ice
-						</s.PlanetInfoHeadline>
-						<s.PlanetInfoText>
+						<s.Api_Links>
+							<s.Api_Link>api 1</s.Api_Link>
+							<s.Api_Link>api 2</s.Api_Link>
+							<s.Api_Link>api 3</s.Api_Link>
+						</s.Api_Links>
+						<s.Planet_Name>MERCURY</s.Planet_Name>
+						<s.Info_Headline>Mercury is hot, but not too hot for ice</s.Info_Headline>
+						<s.Info_Text>
 							The closest planet to the Sun does indeed have ice on its surface. That
 							sounds surprising at first glance, but the ice is found in permanently
 							shadowed craters — those that never receive any sunlight. It is thought
@@ -34,10 +33,10 @@ const Mercury = () => {
 							but it also found organics, which are the building blocks for life.
 							Mercury is way too hot and airless for life as we know it, but it shows
 							how these elements are distributed across the Solar System.
-						</s.PlanetInfoText>
-						<s.InfoContainerDivider />
+						</s.Info_Text>
+						<s.Info_Container_Underline />
 					</div>
-				</s.PlanetInfoContainer>
+				</s.Info_Container>
 			</s.Section>
 		</>
 	);

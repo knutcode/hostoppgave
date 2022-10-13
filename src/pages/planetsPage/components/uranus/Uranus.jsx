@@ -6,26 +6,25 @@ const Uranus = () => {
 	return (
 		<>
 			<s.Section id="uranus">
-				<s.PlanetContainer>
+				<s.Planet_Container>
 					<s.Planet>
 						<s.Img src={URANUS} alt="uranus" />
 
-						<s.ApiInfo>Api Info</s.ApiInfo>
-						<s.ApiLineAngled></s.ApiLineAngled>
+						<s.Api_Info>Api Info</s.Api_Info>
+						<s.Angled_Line />
 					</s.Planet>
-				</s.PlanetContainer>
-				<s.PlanetInfoContainer>
+				</s.Planet_Container>
+
+				<s.Info_Container>
 					<div>
-						<s.PlanetApiLinks>
-							<s.PlanetApiLink>api 1</s.PlanetApiLink>
-							<s.PlanetApiLink>api 2</s.PlanetApiLink>
-							<s.PlanetApiLink>api 3</s.PlanetApiLink>
-						</s.PlanetApiLinks>
-						<s.PlanetName>URANUS</s.PlanetName>
-						<s.PlanetInfoHeadline>
-							Uranus is more stormy than we thought.
-						</s.PlanetInfoHeadline>
-						<s.PlanetInfoText>
+						<s.Api_Links>
+							<s.Api_Link>api 1</s.Api_Link>
+							<s.Api_Link>api 2</s.Api_Link>
+							<s.Api_Link>api 3</s.Api_Link>
+						</s.Api_Links>
+						<s.Planet_Name>URANUS</s.Planet_Name>
+						<s.Info_Headline>Uranus is more stormy than we thought.</s.Info_Headline>
+						<s.Info_Text>
 							When Voyager 2 flew by the planet in the 1980s, scientists saw a mostly
 							featureless blue ball and some assumed there wasn't much activity going
 							on on Uranus. We've had a better look at the data since then that does
@@ -35,10 +34,10 @@ const Uranus = () => {
 							this activity is difficult to say unless we were to send another probe
 							that way. And unfortunately, there are no missions yet that are slated
 							for sure to zoom out to that part of the Solar System.
-						</s.PlanetInfoText>
-						<s.InfoContainerDivider />
+						</s.Info_Text>
+						<s.Info_Container_Underline />
 					</div>
-				</s.PlanetInfoContainer>
+				</s.Info_Container>
 			</s.Section>
 		</>
 	);
