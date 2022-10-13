@@ -28,15 +28,28 @@ const Uranus = () => {
 						<s.Planet_Name>URANUS</s.Planet_Name>
 						<s.Info_Headline>Uranus is more stormy than we thought.</s.Info_Headline>
 						<s.Info_Text>
-							When Voyager 2 flew by the planet in the 1980s, scientists saw a mostly
-							featureless blue ball and some assumed there wasn't much activity going
-							on on Uranus. We've had a better look at the data since then that does
-							show some interesting movement in the southern hemisphere. Additionally,
-							the planet drew closer to the Sun in 2007, and in more recent years
-							telescope probing has shown some storms going on. What is causing all
-							this activity is difficult to say unless we were to send another probe
-							that way. And unfortunately, there are no missions yet that are slated
-							for sure to zoom out to that part of the Solar System.
+							<p>
+								When Voyager 2 flew by the planet in the 1980s, scientists saw a
+								mostly featureless blue ball and some assumed there wasn't much
+								activity going on on Uranus.
+							</p>
+							<p>
+								We've had a better look at the data since then that does show some
+								interesting movement in the southern hemisphere.
+							</p>
+							<p>
+								Additionally, the planet drew closer to the Sun in 2007, and in more
+								recent years telescope probing has shown some storms going on.
+							</p>
+							<br />
+							<p>
+								What is causing all this activity is difficult to say unless we were
+								to send another probe that way.
+							</p>
+							<p>
+								And unfortunately, there are no missions yet that are slated for
+								sure to zoom out to that part of the Solar System.
+							</p>
 						</s.Info_Text>
 						<s.Info_Container_Underline />
 					</s.Info_Container_Div>

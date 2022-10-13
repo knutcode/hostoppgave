@@ -30,14 +30,22 @@ const Earth = () => {
 							You can see Earth's magnetic field at work during light shows.
 						</s.Info_Headline>
 						<s.Info_Text>
-							We have a magnetic field surrounding our planet that protects us from
-							the blasts of radiation and particles the Sun sends our way. Good thing,
-							too, because such flare-ups could prove deadly to unprotected people;
-							that's why NASA keeps an eye on solar activity for astronauts on the
-							International Space Station, for example. At any rate, when you see
-							auroras shining in the sky, that's what happens when the particles from
-							the Sun flow along the magnetic field lines and interact with Earth's
-							upper atmosphere.
+							<p>
+								We have a magnetic field surrounding our planet that protects us
+								from the blasts of radiation and particles the Sun sends our way.
+							</p>
+							<br />
+							<p>
+								Good thing, too, because such flare-ups could prove deadly to
+								unprotected people; that's why NASA keeps an eye on solar activity
+								for astronauts on the International Space Station, for example.
+							</p>
+							<br />
+							<p>
+								At any rate, when you see auroras shining in the sky, that's what
+								happens when the particles from the Sun flow along the magnetic
+								field lines and interact with Earth's upper atmosphere.
+							</p>
 						</s.Info_Text>
 						<s.Info_Container_Underline />
 					</s.Info_Container_Div>

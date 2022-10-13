@@ -28,13 +28,23 @@ const Neptune = () => {
 						<s.Planet_Name>NEPTUNE</s.Planet_Name>
 						<s.Info_Headline>Neptune has supersonic winds. </s.Info_Headline>
 						<s.Info_Text>
-							While on Earth we are concerned about hurricanes, the strength of these
-							storms is nowhere near what you would find on Neptune. At its highest
-							altitudes, according to NASA, winds blow at more than 1,100 miles per
-							hour (1,770 kilometers per hour). To put that in context, that's faster
-							than the speed of sound on Earth, at sea level. Why Neptune is so
-							blustery is a mystery, especially considering the Sun's heat is so
-							little at its distance.
+							<p>
+								While on Earth we are concerned about hurricanes, the strength of
+								these storms is nowhere near what you would find on Neptune.
+							</p>
+							<p>
+								At its highest altitudes, according to NASA, winds blow at more than
+								1,100 miles per hour (1,770 kilometers per hour).
+							</p>
+							<p>
+								To put that in context, that's faster than the speed of sound on
+								Earth, at sea level.
+							</p>
+							<br />
+							<p>
+								Why Neptune is so blustery is a mystery, especially considering the
+								Sun's heat is so little at its distance.
+							</p>
 						</s.Info_Text>
 						<s.Info_Container_Underline />
 					</s.Info_Container_Div>
