@@ -1,7 +1,7 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
-export const StyledLink = styled(Link)`
+export const StyledLink = styled(NavLink)`
 	color: var(--color-white);
 	transition: var(--transition);
 
