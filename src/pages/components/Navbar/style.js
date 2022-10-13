@@ -3,6 +3,7 @@ import styled from "styled-components";
 
 export const StyledLink = styled(Link)`
 	color: var(--color-white);
+	transition: var(--transition);
 
 	&:hover {
 		color: var(--color-primary);
@@ -36,7 +37,7 @@ export const StyledNav = styled.div`
 	height: 5rem;
 	display: flex;
 	gap: 1rem;
-	width: 90%;
+	width: var(--container-width-large);
 	justify-content: space-between;
 	align-items: center;
 	border-bottom: 1px solid var(--color-white);

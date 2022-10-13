@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@100;200;300;400;500;600;700&display=swap");
+
 *,
 *::before,
 *::after {
@@ -40,11 +42,12 @@ html {
 body {
 	/*Box model stuff*/
 	background: var(--color-bg);
+	background-attachment: fixed;
 	/*Typography stuff*/
 	color: var(--color-white);
 	/*Miscellaneous*/
 	line-height: 1.7;
-	font-family: sans-serif;
+	font-family: "IBM Plex Serif", serif;
 }
 
 .container {
