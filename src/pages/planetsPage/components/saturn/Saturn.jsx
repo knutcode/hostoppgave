@@ -1,4 +1,5 @@
 import React from "react";
+import SATURN from "../../../../assets/images/saturn.png";
 import * as s from "../../style";
 
 const Saturn = () => {
@@ -6,17 +7,25 @@ const Saturn = () => {
 		<>
 			<s.Section id="saturn">
 				<s.PlanetContainer>
-					<s.PlanetApiLinks>
-						<s.PlanetApiLink href="">api 1</s.PlanetApiLink>
-						<s.PlanetApiLink>api 2</s.PlanetApiLink>
-						<s.PlanetApiLink>api 3</s.PlanetApiLink>
-					</s.PlanetApiLinks>
 					<s.Planet>
+						<s.Img src={SATURN} alt="saturn" />
+
 						<s.ApiInfo>Api Info</s.ApiInfo>
 						<s.ApiLineAngled></s.ApiLineAngled>
 					</s.Planet>
 				</s.PlanetContainer>
-				<s.PlanetInfoContainer></s.PlanetInfoContainer>
+				<s.PlanetInfoContainer>
+					<div>
+						<s.PlanetApiLinks>
+							<s.PlanetApiLink>api 1</s.PlanetApiLink>
+							<s.PlanetApiLink>api 2</s.PlanetApiLink>
+							<s.PlanetApiLink>api 3</s.PlanetApiLink>
+						</s.PlanetApiLinks>
+						<s.PlanetName>SATURN</s.PlanetName>
+						<s.PlanetInfo>Planet Info</s.PlanetInfo>
+						<s.InfoContainerDivider />
+					</div>
+				</s.PlanetInfoContainer>
 			</s.Section>
 		</>
 	);

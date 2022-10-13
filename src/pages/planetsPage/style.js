@@ -1,32 +1,5 @@
 import styled from "styled-components";
 
-// Navbar on left side for the planets
-export const SideNav = styled.nav`
-	font-size: 2rem;
-	display: flex;
-	gap: 1.9rem;
-	flex-direction: column;
-	width: 7.8rem;
-	position: fixed;
-	top: 50%;
-	margin-block: 2.5rem;
-	transform: translateY(-50%);
-
-	/* Links in navbar */
-	& a {
-		transition: var(--transition);
-
-		&:hover {
-			color: var(--color-primary);
-			cursor: pointer;
-		}
-
-		&.active {
-			color: var(--color-primary);
-		}
-	}
-`;
-
 // Section for each planet
 export const Section = styled.section`
 	display: flex;
@@ -44,26 +17,24 @@ export const PlanetContainer = styled.div`
 	align-items: center;
 `;
 
-export const PlanetApiLinks = styled.div`
-	display: flex;
-	gap: 1rem;
-	margin-top: 5rem;
-`;
-
-export const PlanetApiLink = styled.h3``;
-
 export const Planet = styled.div`
-	width: 31rem;
+	margin-top: 5rem;
+	width: 25rem;
 	aspect-ratio: 1/1;
-	border: 1px solid orangered;
 	border-radius: 50%;
 	position: relative;
+	display: grid;
+`;
+
+export const Img = styled.img`
+	width: 100%;
+	margin: auto;
 `;
 
 export const ApiInfo = styled.h4`
 	border-bottom: 2px solid var(--color-white);
 	position: absolute;
-	left: 28.58rem;
+	left: 22.58rem;
 	top: -0.4rem;
 	padding-inline: 0.5rem;
 	width: max-content;
@@ -80,6 +51,32 @@ export const ApiLineAngled = styled.div`
 
 // Planet Info Container
 export const PlanetInfoContainer = styled.div`
-	border: 1px solid green;
 	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+`;
+
+export const PlanetApiLinks = styled.div`
+	display: flex;
+	gap: 1rem;
+	margin-bottom: 2rem;
+`;
+
+export const PlanetApiLink = styled.h4`
+	margin-right: auto;
+	font-weight: 400;
+`;
+
+export const PlanetName = styled.h1``;
+
+export const PlanetInfo = styled.h5`
+	margin-block: 2rem;
+`;
+
+export const InfoContainerDivider = styled.div`
+	width: 100%;
+	height: 1px;
+	border-bottom: 1px solid var(--color-white);
 `;
