@@ -28,6 +28,10 @@
 	--container-width-small: 90%;
 }
 
+::placeholder {
+    color: #63B4FF;
+}
+
 html {
 	/*Miscellaneous*/
 	scroll-behavior: smooth;
