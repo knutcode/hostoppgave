@@ -7,7 +7,6 @@ export const StyledLink = styled(Link)`
 
 	&:hover {
 		color: var(--color-primary);
-		border-bottom: 1px solid var(--color-primary);
 	}
 
 	&.active {
@@ -25,6 +24,7 @@ export const Nav = styled.nav`
 	width: 100%;
 	display: flex;
 	justify-content: center;
+	font-family: sans-serif;
 `;
 
 export const NavLinks = styled.div`
