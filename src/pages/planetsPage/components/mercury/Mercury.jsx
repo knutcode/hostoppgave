@@ -19,7 +19,7 @@ const Mercury = () => {
 				</s.Planet_Container>
 
 				<s.Info_Container>
-					<div>
+					<div style={{ maxWidth: "50rem" }}>
 						<s.Api_Links>
 							<s.Api_Link>api 1</s.Api_Link>
 							<s.Api_Link>api 2</s.Api_Link>
