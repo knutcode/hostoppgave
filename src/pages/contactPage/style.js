@@ -3,14 +3,14 @@ import styled from "styled-components";
 export const ContactLeft = styled.div`
     width: 50vw;
     height: 55vh;
-    margin: 130px 10px 0px 100px;
+    margin: 130px 0px 0px 70px;
     // border: 5px red solid;
 `
 
 export const ContactRight = styled.div`
     width: 50vw;
     height: 55vh;
-    margin: 130px 100px 0px 10px;
+    margin: 130px 50px 0px 0px;
     // border: 5px red solid;
 `
 
@@ -34,11 +34,20 @@ export const User = styled.input`
     background-color: var(--color-bg);
     border-bottom: var(--color-primary) 2px solid;
     width: 90%;
+    height: 10%;
 `
-export const Comment = styled.input`
+export const Comment = styled.textarea`
     color: var(--color-primary);
     background-color: var(--color-bg);
     border: var(--color-primary) 2px solid;
-    padding: 15%;
     width: 90%;
+    height: 200px;
+    resize: none;
+`
+
+export const Titel = styled.h1`
+    color: var(--color-primary);
+`
+export const Text = styled.h2`
+    font-weight: 600;
 `
