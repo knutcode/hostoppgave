@@ -15,18 +15,20 @@ export const ContactRight = styled.div`
 `
 
 export const ContactInfo = styled.div`
-    margin-bottom: 100px;
+    margin-bottom: 5%;
     text-align: right;
+    padding: 5%;
     // border: 5px red solid;
 `
 
 export const ContactLink = styled.div`
     // border: 5px red solid;
     text-align: right;
+    padding: 5%;
 `
 
 export const Link = styled.a`
-    margin: 5px;
+    margin: 1%;
 `
 
 export const User = styled.input`
@@ -47,7 +49,11 @@ export const Comment = styled.textarea`
 
 export const Titel = styled.h1`
     color: var(--color-primary);
+    font-size: 28px;
+    letter-spacing: 5px;
 `
 export const Text = styled.h2`
+    font-size: 14px;
     font-weight: 600;
+    letter-spacing: 3px;
 `
