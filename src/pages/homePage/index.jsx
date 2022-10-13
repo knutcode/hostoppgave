@@ -6,14 +6,17 @@ const HomePage = () => {
 		<>
 			<section>
 				<div className="container">
-					<s.HeroContainer>
-						<s.Headline>Headline</s.Headline>
-						<s.SubHeader>SubHeader</s.SubHeader>
-					</s.HeroContainer>
+					<s.Main>
+						<s.HeroContainer>
+							<s.SubHeader>PLANETS IN OUR</s.SubHeader>
+							<s.Headline>SOLAR SYSTEM</s.Headline>
+							<s.HeroLine></s.HeroLine>
+							<s.HeroText>Lorem ipsum doler sit amet</s.HeroText>
+							<s.HeroBtn>Get informed</s.HeroBtn>
+						</s.HeroContainer>
 
-					<s.HeroLine></s.HeroLine>
-
-					<s.PlanetContainer>PlanetContainer</s.PlanetContainer>
+						<s.PlanetContainer />
+					</s.Main>
 				</div>
 			</section>
 		</>
