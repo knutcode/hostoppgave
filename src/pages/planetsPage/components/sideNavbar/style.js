@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Side_Navbar = styled.nav`
-	font-size: 1.3rem;
+	font-size: 1.1rem;
 	display: flex;
 	flex-direction: column;
 	width: 7.8rem;
@@ -9,6 +9,7 @@ export const Side_Navbar = styled.nav`
 	top: 50%;
 	margin-block: 2.5rem;
 	transform: translateY(-50%);
+	font-family: AstroSpace, sans-serif;
 
 	/* Links in navbar */
 	& a {
