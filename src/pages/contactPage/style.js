@@ -10,17 +10,19 @@ export const ContactLeft = styled.div`
 export const ContactRight = styled.div`
     width: 50vw;
     height: 55vh;
-    margin: 130px 10px 0px 100px;
+    margin: 130px 100px 0px 10px;
     // border: 5px red solid;
 `
 
 export const ContactInfo = styled.div`
     margin-bottom: 100px;
+    text-align: right;
     // border: 5px red solid;
 `
 
 export const ContactLink = styled.div`
     // border: 5px red solid;
+    text-align: right;
 `
 
 export const Link = styled.a`
