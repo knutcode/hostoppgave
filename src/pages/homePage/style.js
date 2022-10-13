@@ -21,12 +21,22 @@ export const Headline = styled.h1`
 	font-size: 64px;
 	line-height: 64px;
 	margin: 0;
+	white-space: nowrap;
+	@media (max-width: 768px) {
+		font-size: 48px;
+	}
+	@media (max-width: 400px) {
+		font-size: 36px;
+	}
 `;
 
 export const SubHeader = styled.h2`
 	font-size: 28px;
 	line-height: 28px;
 	margin: 0;
+	@media (max-width: 768px) {
+		font-size: 20px;
+	}
 `;
 
 export const HeroLine = styled.div`
@@ -36,6 +46,9 @@ export const HeroLine = styled.div`
 
 export const HeroText = styled.p`
 	font-size: 20px;
+	@media (max-width: 768px) {
+		font-size: 16px;
+	}
 `;
 
 export const HeroBtn = styled.button`
@@ -50,6 +63,9 @@ export const HeroBtn = styled.button`
 	&:hover {
 		transform: scale(1.1);
 	}
+	@media (max-width: 768px) {
+		font-size: 22px;
+	}
 `;
 
 export const PlanetContainer = styled.div`
@@ -58,4 +74,10 @@ export const PlanetContainer = styled.div`
 	border-top-left-radius: 110vw;
 	border-top-right-radius: 110vw;
 	background-color: #006be9;
+	@media (max-width: 768px) {
+		height: 50vh;
+		transform: scaleX(2);
+		border-top-left-radius: 200vw;
+		border-top-right-radius: 200vw;
+	}
 `;
