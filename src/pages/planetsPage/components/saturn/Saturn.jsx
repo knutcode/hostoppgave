@@ -22,8 +22,8 @@ const Saturn = () => {
 							<s.PlanetApiLink>api 3</s.PlanetApiLink>
 						</s.PlanetApiLinks>
 						<s.PlanetName>SATURN</s.PlanetName>
-						<s.PlanetInfo>Planet Info</s.PlanetInfo>
-						<s.InfoContainerDivider />
+						<s.PlanetInfoHeadline>Headline</s.PlanetInfoHeadline>
+						<s.PlanetInfoText>Text</s.PlanetInfoText> <s.InfoContainerDivider />
 					</div>
 				</s.PlanetInfoContainer>
 			</s.Section>

@@ -21,7 +21,8 @@ const Venus = () => {
 							<s.PlanetApiLink>api 3</s.PlanetApiLink>
 						</s.PlanetApiLinks>
 						<s.PlanetName>VENUS</s.PlanetName>
-						<s.PlanetInfo>Planet Info</s.PlanetInfo>
+						<s.PlanetInfoHeadline>Headline</s.PlanetInfoHeadline>
+						<s.PlanetInfoText>Text</s.PlanetInfoText>
 						<s.InfoContainerDivider />
 					</div>
 				</s.PlanetInfoContainer>

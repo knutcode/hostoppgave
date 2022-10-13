@@ -34,7 +34,7 @@ export const Img = styled.img`
 export const ApiInfo = styled.h4`
 	border-bottom: 2px solid var(--color-white);
 	position: absolute;
-	left: 22.58rem;
+	left: 22.7rem;
 	top: -0.4rem;
 	padding-inline: 0.5rem;
 	width: max-content;
@@ -65,13 +65,18 @@ export const PlanetApiLinks = styled.div`
 `;
 
 export const PlanetApiLink = styled.h4`
-	margin-right: auto;
 	font-weight: 400;
 `;
 
-export const PlanetName = styled.h1``;
+export const PlanetName = styled.h1`
+	font-size: 3.5rem;
+`;
 
-export const PlanetInfo = styled.h5`
+export const PlanetInfoHeadline = styled.h4`
+	margin-block: 2rem;
+`;
+
+export const PlanetInfoText = styled.h5`
 	margin-block: 2rem;
 `;
 

@@ -18,6 +18,7 @@ export const SideNav = styled.nav`
 		&:hover {
 			color: var(--color-primary);
 			cursor: pointer;
+			margin-left: 0.2rem;
 		}
 
 		&.active {
