@@ -14,9 +14,8 @@ const Earth = () => {
 						<s.Angled_Line />
 					</s.Planet>
 					<a href="https://www.freepik.com/free-vector/sun-moon-mercury-venus-earth-mars-jupiter-saturn-uranus-neptun-colorful-planets-set_13768792.htm#query=planets&position=23&from_view=keyword">
-						Image by macrovector
+						Image by <span>macrovector</span>
 					</a>
-					on Freepik
 				</s.Planet_Container>
 
 				<s.Info_Container>

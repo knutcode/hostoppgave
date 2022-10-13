@@ -19,6 +19,19 @@ export const Planet_Container = styled.div`
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+
+	& a {
+		font-size: 0.6rem;
+		color: grey;
+
+		& span {
+			color: var(--color-primary);
+
+			&:hover {
+				color: var(--color-white);
+			}
+		}
+	}
 `;
 
 export const Planet = styled.div`
