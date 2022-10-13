@@ -13,7 +13,7 @@ export const HeroContainer = styled.div`
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
-	padding-top: 7rem;
+	padding-top: 10rem;
 	margin-bottom: 7rem;
 `;
 
