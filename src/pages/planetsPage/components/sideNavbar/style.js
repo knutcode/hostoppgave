@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const Side_Navbar = styled.nav`
 	font-size: 1.3rem;
 	display: flex;
-	gap: 1.9rem;
 	flex-direction: column;
 	width: 7.8rem;
 	position: fixed;
@@ -13,6 +12,7 @@ export const Side_Navbar = styled.nav`
 
 	/* Links in navbar */
 	& a {
+		padding-block: 0.9rem;
 		transition: var(--transition);
 
 		&:hover {
