@@ -8,9 +8,9 @@ const ContactPage = () => {
 		<section>
 			<Flexbox flexDirection="row">
 				<s.ContactLeft>
-					<s.user type="text" placeholder="Name" />
-					<s.user type="text" placeholder="Mail"/>
-					<s.comment type="text" placeholder="Comment" />
+					<s.User type="text" placeholder="Name" />
+					<s.User type="text" placeholder="Mail"/>
+					<s.Comment type="text" placeholder="Comment" />
 					<br />
 					<button>Submit</button>
 				</s.ContactLeft>
@@ -22,9 +22,9 @@ const ContactPage = () => {
 					</s.ContactInfo>
 					<s.ContactLink>
 						<h1>Find us at</h1>
-						<s.link href="">Discord</s.link>
-						<s.link href="">Twitter</s.link>
-						<s.link href="">Linkedin</s.link>
+						<s.Link href="">Discord</s.Link>
+						<s.Link href="">Twitter</s.Link>
+						<s.Link href="">Linkedin</s.Link>
 					</s.ContactLink>
 				</s.ContactRight>
 			</Flexbox>

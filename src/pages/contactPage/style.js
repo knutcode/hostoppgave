@@ -23,20 +23,17 @@ export const ContactLink = styled.div`
     // border: 5px red solid;
 `
 
-export const link = styled.a`
+export const Link = styled.a`
     margin: 5px;
 `
-export const fromText = styled.input`
-    color: var(--color-primary);
-`
 
-export const user = styled.input`
+export const User = styled.input`
     color: var(--color-primary);
     background-color: var(--color-bg);
     border-bottom: var(--color-primary) 2px solid;
     width: 90%;
 `
-export const comment = styled.input`
+export const Comment = styled.input`
     color: var(--color-primary);
     background-color: var(--color-bg);
     border: var(--color-primary) 2px solid;
