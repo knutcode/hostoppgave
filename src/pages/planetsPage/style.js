@@ -81,11 +81,14 @@ export const Planet_Name = styled.h1`
 `;
 
 export const Info_Headline = styled.h3`
-	margin-block: 2rem;
+	margin-block: 2rem 1rem;
+	color: var(--color-primary);
 `;
 
-export const Info_Text = styled.h5`
-	margin-block: 2rem;
+export const Info_Text = styled.p`
+	margin-bottom: 2rem;
+	font-weight: 400;
+	font-size: 0.9rem;
 `;
 
 export const Info_Container_Underline = styled.div`
