@@ -72,23 +72,29 @@ export const Api_Links = styled.div`
 	margin-bottom: 2rem;
 `;
 
-export const Api_Link = styled.h4`
-	font-weight: 400;
+export const Api_Link = styled.h3`
+	font-weight: 300;
 `;
 
 export const Planet_Name = styled.h1`
 	font-size: 3.5rem;
+	/* font-family: Ailerons, sans-serif; */
+	font-family: AstroSpace, sans-serif;
 `;
 
-export const Info_Headline = styled.h3`
+export const Info_Headline = styled.h2`
 	margin-block: 2rem 1rem;
+	font-size: 1.3rem;
 	color: var(--color-primary);
+	font-family: AstroSpace, sans-serif;
 `;
 
 export const Info_Text = styled.p`
+	font-family: AstroSpace, sans-serif;
 	margin-bottom: 2rem;
-	font-weight: 400;
-	font-size: 0.9rem;
+	font-weight: 300;
+	font-size: 0.8rem;
+	line-height: 2;
 `;
 
 export const Info_Container_Underline = styled.div`
