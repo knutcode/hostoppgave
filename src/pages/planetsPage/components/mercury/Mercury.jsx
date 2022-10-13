@@ -30,7 +30,7 @@ const Mercury = () => {
 							sounds surprising at first glance, but the ice is found in permanently
 							shadowed craters — those that never receive any sunlight. It is thought
 							that perhaps comets delivered this ice to Mercury in the first place. In
-							fact, NASA’s MESSENGER spacecraft not only found ice at the north pole,
+							fact, NASA's MESSENGER spacecraft not only found ice at the north pole,
 							but it also found organics, which are the building blocks for life.
 							Mercury is way too hot and airless for life as we know it, but it shows
 							how these elements are distributed across the Solar System.

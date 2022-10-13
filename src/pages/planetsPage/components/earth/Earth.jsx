@@ -15,7 +15,7 @@ const Earth = () => {
 					</s.Planet>
 					<a href="https://www.freepik.com/free-vector/sun-moon-mercury-venus-earth-mars-jupiter-saturn-uranus-neptun-colorful-planets-set_13768792.htm#query=planets&position=23&from_view=keyword">
 						Image by macrovector
-					</a>{" "}
+					</a>
 					on Freepik
 				</s.PlanetContainer>
 				<s.PlanetInfoContainer>
@@ -26,8 +26,19 @@ const Earth = () => {
 							<s.PlanetApiLink>api 3</s.PlanetApiLink>
 						</s.PlanetApiLinks>
 						<s.PlanetName>EARTH</s.PlanetName>
-						<s.PlanetInfoHeadline>Headline</s.PlanetInfoHeadline>
-						<s.PlanetInfoText>Text</s.PlanetInfoText>
+						<s.PlanetInfoHeadline>
+							You can see Earth's magnetic field at work during light shows.
+						</s.PlanetInfoHeadline>
+						<s.PlanetInfoText>
+							We have a magnetic field surrounding our planet that protects us from
+							the blasts of radiation and particles the Sun sends our way. Good thing,
+							too, because such flare-ups could prove deadly to unprotected people;
+							that's why NASA keeps an eye on solar activity for astronauts on the
+							International Space Station, for example. At any rate, when you see
+							auroras shining in the sky, that's what happens when the particles from
+							the Sun flow along the magnetic field lines and interact with Earth's
+							upper atmosphere.
+						</s.PlanetInfoText>
 						<s.InfoContainerDivider />
 					</div>
 				</s.PlanetInfoContainer>

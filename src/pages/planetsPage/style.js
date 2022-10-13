@@ -72,7 +72,7 @@ export const PlanetName = styled.h1`
 	font-size: 3.5rem;
 `;
 
-export const PlanetInfoHeadline = styled.h4`
+export const PlanetInfoHeadline = styled.h3`
 	margin-block: 2rem;
 `;
 
