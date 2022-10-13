@@ -1,13 +1,12 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
-export const StyledLink = styled(Link)`
+export const StyledLink = styled(NavLink)`
 	color: var(--color-white);
 	transition: var(--transition);
 
 	&:hover {
 		color: var(--color-primary);
-		border-bottom: 1px solid var(--color-primary);
 	}
 
 	&.active {
@@ -25,6 +24,7 @@ export const Nav = styled.nav`
 	width: 100%;
 	display: flex;
 	justify-content: center;
+	font-family: sans-serif;
 `;
 
 export const NavLinks = styled.div`
