@@ -171,7 +171,7 @@ export const Info_Headline = styled.h2`
 	}
 `;
 
-export const Info_Text = styled.p`
+export const Info_Text = styled.div`
 	font-family: AstroSpace, sans-serif;
 	margin-bottom: 2rem;
 	font-weight: 300;
