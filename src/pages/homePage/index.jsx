@@ -10,9 +10,11 @@ const HomePage = () => {
 					<s.SubHeader>PLANETS IN OUR</s.SubHeader>
 					<s.Headline>SOLAR SYSTEM</s.Headline>
 					<s.HeroLine />
-					<s.HeroText>Lorem ipsum doler sit amet</s.HeroText>
+					<s.HeroText>
+						The Solar System is the gravitationally bound system of the Sun and the objects that orbit it.
+					</s.HeroText>
 					<Link to="/planets">
-						<s.HeroBtn>Get informed</s.HeroBtn>
+						<s.HeroBtn>Start exploring!</s.HeroBtn>
 					</Link>
 				</s.HeroContainer>
 
