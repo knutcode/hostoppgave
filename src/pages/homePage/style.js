@@ -60,7 +60,7 @@ export const HeroBtn = styled.button`
 	padding: 0.5em 1em;
 	background: var(--color-white);
 	font-family: inherit;
-	font-size: 28px;
+	font-size: 24px;
 	font-weight: bold;
 	cursor: pointer;
 	transition: 0.15s;
@@ -68,7 +68,7 @@ export const HeroBtn = styled.button`
 		transform: scale(1.1);
 	}
 	@media (max-width: 768px) {
-		font-size: 22px;
+		font-size: 20px;
 	}
 `;
 

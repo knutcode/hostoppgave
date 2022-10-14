@@ -14,7 +14,7 @@ const HomePage = () => {
 						The Solar System is the gravitationally bound system of the Sun and the objects that orbit it.
 					</s.HeroText>
 					<Link to="/planets">
-						<s.HeroBtn>Get informed</s.HeroBtn>
+						<s.HeroBtn>Start exploring!</s.HeroBtn>
 					</Link>
 				</s.HeroContainer>
 
