@@ -13,6 +13,12 @@ const Uranus = () => {
 						<s.Api_Info_Absolute>Api Info</s.Api_Info_Absolute>
 						<s.Angled_Line />
 					</s.Planet>
+					<p>
+						Image by &nbsp;
+						<a href="https://www.freepik.com/free-vector/sun-moon-mercury-venus-earth-mars-jupiter-saturn-uranus-neptun-colorful-planets-set_13768792.htm#query=planets&position=23&from_view=keyword">
+							macrovector
+						</a>
+					</p>
 				</s.Planet_Container>
 
 				<s.Info_Container>
