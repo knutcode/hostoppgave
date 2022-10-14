@@ -12,10 +12,12 @@ const Navbar = () => {
 		<>
 			<s.Nav>
 				<s.Styled_Nav>
-					<h2>
+					<div>
 						<FaSpaceShuttle className="icon" />
-						Lo<s.Logo_Span>go</s.Logo_Span>
-					</h2>
+						<h2>
+							Lo<s.Logo_Span>go</s.Logo_Span>
+						</h2>
+					</div>
 					<s.Nav_Links>
 						<s.Styled_NavLink to="/home" activeClassName="active">
 							Home
