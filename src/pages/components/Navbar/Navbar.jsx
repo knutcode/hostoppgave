@@ -1,6 +1,7 @@
 import React from "react";
 import { FaSpaceShuttle } from "react-icons/fa";
 import { Route, Routes } from "react-router";
+import { NavLink } from "react-router-dom";
 import ContactPage from "../../landingPage/ContactPage";
 import ErrorPage from "../../landingPage/ErrorPage";
 import LandingPage from "../../landingPage/HomePage";
@@ -12,12 +13,12 @@ const Navbar = () => {
 		<>
 			<s.Nav>
 				<s.Styled_Nav>
-					<div>
+					<NavLink to="/home" className="logoContainer">
 						<FaSpaceShuttle className="icon" />
 						<h2>
-							Lo<s.Logo_Span>go</s.Logo_Span>
+							LO<span>GO</span>
 						</h2>
-					</div>
+					</NavLink>
 					<s.Nav_Links>
 						<s.Styled_NavLink to="/home" activeclassname="active">
 							Home
