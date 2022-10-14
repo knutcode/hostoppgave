@@ -1,14 +1,11 @@
-import { HashRouter } from "react-router-dom";
 import "./assets/Global.css";
-import Navbar from "./pages/components/Navbar/Navbar";
+import LandingPage from "./pages/landingPage";
 
 function App() {
 	return (
-		<HashRouter>
-			<div className="App">
-				<Navbar />
-			</div>
-		</HashRouter>
+		<div className="App">
+			<LandingPage />
+		</div>
 	);
 }
 

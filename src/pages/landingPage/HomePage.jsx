@@ -1,6 +1,6 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import * as s from './style';
+import React from "react";
+import { Link } from "react-router-dom";
+import * as s from "./homePageFiles/style";
 
 const HomePage = () => {
 	return (

@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import '../../assets/Global.css';
+import styled from "styled-components";
+import "../../../assets/Global.css";
 
 export const Main = styled.main`
 	overflow: hidden;
@@ -32,7 +32,7 @@ export const Headline = styled.h1`
 `;
 
 export const SubHeader = styled.h2`
-	font-family: 'Orbitron', sans-serif;
+	font-family: "Orbitron", sans-serif;
 	font-size: 28px;
 	line-height: 28px;
 	margin: 0;

@@ -1,5 +1,5 @@
 import React from "react";
-import URANUS from "../../../../assets/images/uranus.png";
+import URANUS from "../../../../../assets/images/uranus.png";
 import * as s from "../../style";
 
 const Uranus = () => {
@@ -32,26 +32,22 @@ const Uranus = () => {
 						<s.Info_Headline>Uranus is more stormy than we thought.</s.Info_Headline>
 						<s.Info_Text>
 							<p>
-								When Voyager 2 flew by the planet in the 1980s, scientists saw a
-								mostly featureless blue ball and some assumed there wasn't much
-								activity going on on Uranus.
+								When Voyager 2 flew by the planet in the 1980s, scientists saw a mostly featureless blue ball and some
+								assumed there wasn't much activity going on on Uranus.
 							</p>
 							<p>
-								We've had a better look at the data since then that does show some
-								interesting movement in the southern hemisphere.
+								We've had a better look at the data since then that does show some interesting movement in the southern
+								hemisphere.
 							</p>
 							<p>
-								Additionally, the planet drew closer to the Sun in 2007, and in more
-								recent years telescope probing has shown some storms going on.
+								Additionally, the planet drew closer to the Sun in 2007, and in more recent years telescope probing has shown
+								some storms going on.
 							</p>
 							<br />
+							<p>What is causing all this activity is difficult to say unless we were to send another probe that way.</p>
 							<p>
-								What is causing all this activity is difficult to say unless we were
-								to send another probe that way.
-							</p>
-							<p>
-								And unfortunately, there are no missions yet that are slated for
-								sure to zoom out to that part of the Solar System.
+								And unfortunately, there are no missions yet that are slated for sure to zoom out to that part of the Solar
+								System.
 							</p>
 						</s.Info_Text>
 						<s.Info_Container_Underline />
