@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/hostoppgave/static/css/main.9d099657.css",
-    "main.js": "/hostoppgave/static/js/main.48972fca.js",
+    "main.js": "/hostoppgave/static/js/main.fb8fc35e.js",
     "static/media/saturn.png": "/hostoppgave/static/media/saturn.04ae037cfe510038f08d.png",
     "static/media/neptune.png": "/hostoppgave/static/media/neptune.d11cbc1c55051572e79d.png",
     "static/media/uranus.png": "/hostoppgave/static/media/uranus.752f4d291edbf8824c22.png",
@@ -13,10 +13,10 @@
     "static/media/AstroSpace.otf": "/hostoppgave/static/media/AstroSpace.a85f1c16ca07aaf84263.otf",
     "index.html": "/hostoppgave/index.html",
     "main.9d099657.css.map": "/hostoppgave/static/css/main.9d099657.css.map",
-    "main.48972fca.js.map": "/hostoppgave/static/js/main.48972fca.js.map"
+    "main.fb8fc35e.js.map": "/hostoppgave/static/js/main.fb8fc35e.js.map"
   },
   "entrypoints": [
     "static/css/main.9d099657.css",
-    "static/js/main.48972fca.js"
+    "static/js/main.fb8fc35e.js"
   ]
 }
