@@ -19,13 +19,13 @@ const Navbar = () => {
 						</h2>
 					</div>
 					<s.Nav_Links>
-						<s.Styled_NavLink to="/home" activeClassName="active">
+						<s.Styled_NavLink to="/home" activeclassname="active">
 							Home
 						</s.Styled_NavLink>
-						<s.Styled_NavLink to="/planets" activeClassName="active">
+						<s.Styled_NavLink to="/planets" activeclassname="active">
 							Planets
 						</s.Styled_NavLink>
-						<s.Styled_NavLink to="/contact" activeClassName="active">
+						<s.Styled_NavLink to="/contact" activeclassname="active">
 							Contact Us
 						</s.Styled_NavLink>
 					</s.Nav_Links>

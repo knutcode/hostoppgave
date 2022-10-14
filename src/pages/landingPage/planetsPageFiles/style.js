@@ -35,6 +35,7 @@ export const Planet_Container = styled.div`
 		color: grey;
 
 		& a {
+			transition: var(--transition);
 			color: var(--color-primary);
 
 			&:hover {
@@ -147,6 +148,17 @@ export const Api_Links = styled.div`
 
 export const Api_Link = styled.h3`
 	font-weight: 300;
+	transition: var(--transition);
+	text-decoration: underline;
+
+	&.active {
+		color: var(--color-primary);
+	}
+
+	&:hover {
+		color: var(--color-primary);
+		cursor: pointer;
+	}
 `;
 
 export const Planet_Name = styled.h1`
