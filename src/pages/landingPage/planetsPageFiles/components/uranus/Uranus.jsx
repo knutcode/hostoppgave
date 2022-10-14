@@ -1,20 +1,31 @@
-import React from "react";
+import axios from "axios";
+import React, { useState } from "react";
 import URANUS from "../../../../../assets/images/uranus.png";
 import * as s from "../../style";
-import axios from "axios";
-import { useState } from "react";
 
 const Uranus = () => {
-	const [planetName, setPlanetName] = useState();
+	const [active, setActive] = useState("");
+	const [api, setApi] = useState("Uranus");
 
-	const getPlanetData = () => {
+	const [planetName, setPlanetName] = useState();
+	const [avgTemp, setAvgTemp] = useState();
+	const [gravity, setGravity] = useState();
+	const [density, setDensity] = useState();
+
+	const getPlanetData = (planet) => {
 		axios
-			.get(`https://api.le-systeme-solaire.net/rest/bodies/uranus`, (res) => {
+			.get(`https://api.le-systeme-solaire.net/rest/bodies/` + planet, (res) => {
 				res.json();
 			})
-			.then((data) => setPlanetName(data.data.englishName));
+			.then((data) => {
+				setPlanetName(data.data.englishName);
+				setAvgTemp(data.data.avgTemp);
+				setGravity(data.data.gravity);
+				setDensity(data.data.density);
+			});
 	};
-	getPlanetData();
+	getPlanetData("uranus");
+
 	return (
 		<>
 			<s.Section id="uranus">
@@ -22,7 +33,7 @@ const Uranus = () => {
 					<s.Planet>
 						<s.Img src={URANUS} alt="uranus" />
 
-						<s.Api_Info_Absolute>Api Info</s.Api_Info_Absolute>
+						<s.Api_Info_Absolute>{api}</s.Api_Info_Absolute>
 						<s.Angled_Line />
 					</s.Planet>
 					<p>
@@ -36,30 +47,58 @@ const Uranus = () => {
 				<s.Info_Container>
 					<s.Info_Container_Div>
 						<s.Api_Links>
-							<s.Api_Link>api 1</s.Api_Link>
-							<s.Api_Link>api 2</s.Api_Link>
-							<s.Api_Link>api 3</s.Api_Link>
+							<s.Api_Link
+								className={active === "temp" ? "active" : ""}
+								onClick={() => {
+									setApi((avgTemp - 273.15).toFixed(1) + " °C");
+									setActive("temp");
+								}}
+							>
+								Avg.Temp.
+							</s.Api_Link>
+							<s.Api_Link
+								className={active === "gravity" ? "active" : ""}
+								onClick={() => {
+									setApi(gravity.toFixed(1) + " m/s²");
+									setActive("gravity");
+								}}
+							>
+								Gravity
+							</s.Api_Link>
+							<s.Api_Link
+								className={active === "density" ? "active" : ""}
+								onClick={() => {
+									setApi(density.toFixed(2) + " g/cm³");
+									setActive("density");
+								}}
+							>
+								Density
+							</s.Api_Link>
 						</s.Api_Links>
 						<s.Planet_Name>{planetName}</s.Planet_Name>
 						<s.Info_Headline>Uranus is more stormy than we thought.</s.Info_Headline>
 						<s.Info_Text>
 							<p>
-								When Voyager 2 flew by the planet in the 1980s, scientists saw a mostly featureless blue ball and some
-								assumed there wasn't much activity going on on Uranus.
+								When Voyager 2 flew by the planet in the 1980s, scientists saw a
+								mostly featureless blue ball and some assumed there wasn't much
+								activity going on on Uranus.
 							</p>
 							<p>
-								We've had a better look at the data since then that does show some interesting movement in the southern
-								hemisphere.
+								We've had a better look at the data since then that does show some
+								interesting movement in the southern hemisphere.
 							</p>
 							<p>
-								Additionally, the planet drew closer to the Sun in 2007, and in more recent years telescope probing has shown
-								some storms going on.
+								Additionally, the planet drew closer to the Sun in 2007, and in more
+								recent years telescope probing has shown some storms going on.
 							</p>
 							<br />
-							<p>What is causing all this activity is difficult to say unless we were to send another probe that way.</p>
 							<p>
-								And unfortunately, there are no missions yet that are slated for sure to zoom out to that part of the Solar
-								System.
+								What is causing all this activity is difficult to say unless we were
+								to send another probe that way.
+							</p>
+							<p>
+								And unfortunately, there are no missions yet that are slated for
+								sure to zoom out to that part of the Solar System.
 							</p>
 						</s.Info_Text>
 						<s.Info_Container_Underline />
