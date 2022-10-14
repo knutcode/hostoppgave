@@ -9,7 +9,7 @@ const Saturn = () => {
 
 	const getPlanetData = () => {
 		axios
-			.get(`https://api.le-systeme-solaire.net/rest/bodies/terre`, (res) => {
+			.get(`https://api.le-systeme-solaire.net/rest/bodies/saturne`, (res) => {
 				res.json();
 			})
 			.then((data) => setPlanetName(data.data.englishName));

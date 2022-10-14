@@ -9,7 +9,7 @@ const Venus = () => {
 
 	const getPlanetData = () => {
 		axios
-			.get(`https://api.le-systeme-solaire.net/rest/bodies/terre`, (res) => {
+			.get(`https://api.le-systeme-solaire.net/rest/bodies/venus`, (res) => {
 				res.json();
 			})
 			.then((data) => setPlanetName(data.data.englishName));

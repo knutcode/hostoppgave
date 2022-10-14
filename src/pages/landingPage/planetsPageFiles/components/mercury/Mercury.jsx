@@ -9,7 +9,7 @@ const Mercury = () => {
 
 	const getPlanetData = () => {
 		axios
-			.get(`https://api.le-systeme-solaire.net/rest/bodies/terre`, (res) => {
+			.get(`https://api.le-systeme-solaire.net/rest/bodies/mercure`, (res) => {
 				res.json();
 			})
 			.then((data) => setPlanetName(data.data.englishName));
