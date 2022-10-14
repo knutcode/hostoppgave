@@ -29,6 +29,8 @@ export const ContactLink = styled.div`
 
 export const Link = styled.a`
     margin: 1%;
+    padding: 1%;
+    text-align: right;
 `
 
 export const User = styled.input`
@@ -37,6 +39,7 @@ export const User = styled.input`
     border-bottom: var(--color-primary) 2px solid;
     width: 90%;
     height: 10%;
+    margin-bottom: 5%;
 `
 export const Comment = styled.textarea`
     color: var(--color-primary);
@@ -56,4 +59,12 @@ export const Text = styled.h2`
     font-size: 14px;
     font-weight: 600;
     letter-spacing: 3px;
+`
+
+export const SubmitBTN = styled.button`
+    border-radius: 60%;
+    height: 25px;
+    width: 90px;
+    color: var(--color-primary);
+    background-color: var(--color-white);
 `

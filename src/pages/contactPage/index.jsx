@@ -1,6 +1,9 @@
 import React from "react";
 import Flexbox from 'flexbox-react';
 import * as s from "./style";
+import { AiOutlineLinkedin, AiOutlineTwitter } from 'react-icons/ai';
+import {BsDiscord} from 'react-icons/bs'
+import SubmitForm from "./Submit";
 
 const ContactPage = () => {
 
@@ -13,7 +16,7 @@ const ContactPage = () => {
 					<s.User type="email" placeholder="Mail"/>
 					<s.Comment placeholder="Comment" />
 					<br />
-					<button>Submit</button>
+					<s.SubmitBTN onClick={SubmitForm}>Submit</s.SubmitBTN>
 				</s.ContactLeft>
 				<s.ContactRight>
 				{/* Delen hvor vi gir vår kontakt informasjon */}
@@ -25,9 +28,9 @@ const ContactPage = () => {
 				{/* Delen hvor vi gir muligheter å nå oss på */}
 					<s.ContactLink>
 						<s.Titel>Find us at</s.Titel>
-						<s.Link href="">Discord</s.Link>
-						<s.Link href="">Twitter</s.Link>
-						<s.Link href="">Linkedin</s.Link>
+						<s.Link href=""> <BsDiscord /> </s.Link>
+						<s.Link href=""> <AiOutlineTwitter /> </s.Link>
+						<s.Link href=""> <AiOutlineLinkedin /> </s.Link>
 					</s.ContactLink>
 				</s.ContactRight>
 			</Flexbox>
