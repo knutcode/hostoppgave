@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@100;200;300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
 
 @font-face {
 	font-family: AstroSpace;
@@ -37,8 +37,12 @@
 	--container-width-small: 90%;
 }
 
+::placeholder {
+	color: var(--color-primary);
+}
+
 ::-webkit-scrollbar {
-	display: none; /* Remove scrollbar for Chrome, Safari, Microsoft Edge and Opera */
+	display: none;
 }
 
 html {
@@ -55,7 +59,7 @@ body {
 	color: var(--color-white);
 	/*Miscellaneous*/
 	line-height: 1.7;
-	font-family: "IBM Plex Serif", serif;
+	font-family: 'Space Grotesk', sans-serif;
 }
 
 .container {

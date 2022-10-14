@@ -1,4 +1,5 @@
 import React from "react";
+import { FaSpaceShuttle } from "react-icons/fa";
 import { Route, Routes } from "react-router";
 import ContactPage from "../../contactPage";
 import ErrorPage from "../../errorPage";
@@ -10,22 +11,23 @@ const Navbar = () => {
 	return (
 		<>
 			<s.Nav>
-				<s.StyledNav>
+				<s.Styled_Nav>
 					<h2>
-						Lo<s.LogoSpan>go</s.LogoSpan>
+						<FaSpaceShuttle className="icon" />
+						Lo<s.Logo_Span>go</s.Logo_Span>
 					</h2>
-					<s.NavLinks>
-						<s.StyledLink to="/home" activeClassName="active">
+					<s.Nav_Links>
+						<s.Styled_NavLink to="/home" activeClassName="active">
 							Home
-						</s.StyledLink>
-						<s.StyledLink to="/planets" activeClassName="active">
+						</s.Styled_NavLink>
+						<s.Styled_NavLink to="/planets" activeClassName="active">
 							Planets
-						</s.StyledLink>
-						<s.StyledLink to="/contact" activeClassName="active">
+						</s.Styled_NavLink>
+						<s.Styled_NavLink to="/contact" activeClassName="active">
 							Contact Us
-						</s.StyledLink>
-					</s.NavLinks>
-				</s.StyledNav>
+						</s.Styled_NavLink>
+					</s.Nav_Links>
+				</s.Styled_Nav>
 			</s.Nav>
 			<Routes>
 				<Route path="/home" element={<LandingPage />} />
