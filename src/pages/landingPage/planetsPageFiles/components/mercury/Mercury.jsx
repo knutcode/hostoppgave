@@ -1,8 +1,20 @@
 import React from "react";
 import MERCURY from "../../../../../assets/images/mercury.png";
 import * as s from "../../style";
+import axios from "axios";
+import { useState } from "react";
 
 const Mercury = () => {
+	const [planetName, setPlanetName] = useState();
+
+	const getPlanetData = () => {
+		axios
+			.get(`https://api.le-systeme-solaire.net/rest/bodies/terre`, (res) => {
+				res.json();
+			})
+			.then((data) => setPlanetName(data.data.englishName));
+	};
+	getPlanetData();
 	return (
 		<>
 			<s.Section id="mercury">
@@ -28,7 +40,7 @@ const Mercury = () => {
 							<s.Api_Link>api 2</s.Api_Link>
 							<s.Api_Link>api 3</s.Api_Link>
 						</s.Api_Links>
-						<s.Planet_Name>MERCURY</s.Planet_Name>
+						<s.Planet_Name>{planetName}</s.Planet_Name>
 						<s.Info_Headline>Mercury is hot, but not too hot for ice</s.Info_Headline>
 						<s.Info_Text>
 							<p>The closest planet to the Sun does indeed have ice on its surface. </p>

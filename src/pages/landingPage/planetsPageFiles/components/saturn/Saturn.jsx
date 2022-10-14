@@ -1,8 +1,20 @@
 import React from "react";
 import SATURN from "../../../../../assets/images/saturn.png";
 import * as s from "../../style";
+import axios from "axios";
+import { useState } from "react";
 
 const Saturn = () => {
+	const [planetName, setPlanetName] = useState();
+
+	const getPlanetData = () => {
+		axios
+			.get(`https://api.le-systeme-solaire.net/rest/bodies/terre`, (res) => {
+				res.json();
+			})
+			.then((data) => setPlanetName(data.data.englishName));
+	};
+	getPlanetData();
 	return (
 		<>
 			<s.Section id="saturn">
@@ -28,7 +40,7 @@ const Saturn = () => {
 							<s.Api_Link>api 2</s.Api_Link>
 							<s.Api_Link>api 3</s.Api_Link>
 						</s.Api_Links>
-						<s.Planet_Name>SATURN</s.Planet_Name>
+						<s.Planet_Name>{planetName}</s.Planet_Name>
 						<s.Info_Headline>No one knows how old Saturn's rings are</s.Info_Headline>
 						<s.Info_Text>
 							<p>There's a field of ice and rock debris circling Saturn that from afar, appear as rings.</p>

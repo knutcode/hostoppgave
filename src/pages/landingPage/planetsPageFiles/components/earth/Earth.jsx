@@ -1,8 +1,20 @@
 import React from "react";
 import EARTH from "../../../../../assets/images/earth.png";
 import * as s from "../../style";
+import axios from "axios";
+import { useState } from "react";
 
 const Earth = () => {
+	const [planetName, setPlanetName] = useState();
+
+	const getPlanetData = () => {
+		axios
+			.get(`https://api.le-systeme-solaire.net/rest/bodies/terre`, (res) => {
+				res.json();
+			})
+			.then((data) => setPlanetName(data.data.englishName));
+	};
+	getPlanetData();
 	return (
 		<>
 			<s.Section id="earth">
@@ -10,7 +22,7 @@ const Earth = () => {
 					<s.Planet>
 						<s.Img src={EARTH} alt="earth" />
 
-						<s.Api_Info_Absolute>Api Info</s.Api_Info_Absolute>
+						<s.Api_Info_Absolute>Api info</s.Api_Info_Absolute>
 						<s.Angled_Line />
 					</s.Planet>
 					<p>
@@ -28,7 +40,7 @@ const Earth = () => {
 							<s.Api_Link>api 2</s.Api_Link>
 							<s.Api_Link>api 3</s.Api_Link>
 						</s.Api_Links>
-						<s.Planet_Name>EARTH</s.Planet_Name>
+						<s.Planet_Name>{planetName}</s.Planet_Name>
 						<s.Info_Headline>You can see Earth's magnetic field at work during light shows.</s.Info_Headline>
 						<s.Info_Text>
 							<p>

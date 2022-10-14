@@ -1,8 +1,20 @@
 import React from "react";
 import VENUS from "../../../../../assets/images/venus.png";
 import * as s from "../../style";
+import axios from "axios";
+import { useState } from "react";
 
 const Venus = () => {
+	const [planetName, setPlanetName] = useState();
+
+	const getPlanetData = () => {
+		axios
+			.get(`https://api.le-systeme-solaire.net/rest/bodies/terre`, (res) => {
+				res.json();
+			})
+			.then((data) => setPlanetName(data.data.englishName));
+	};
+	getPlanetData();
 	return (
 		<>
 			<s.Section id="venus">
@@ -28,7 +40,7 @@ const Venus = () => {
 							<s.Api_Link>Distance(Earth)</s.Api_Link>
 							<s.Api_Link>Mass</s.Api_Link>
 						</s.Api_Links>
-						<s.Planet_Name>VENUS</s.Planet_Name>
+						<s.Planet_Name>{planetName}</s.Planet_Name>
 						<s.Info_Headline>Venus doesn't have any moons, and we aren't sure why.</s.Info_Headline>
 						<s.Info_Text>
 							<p>

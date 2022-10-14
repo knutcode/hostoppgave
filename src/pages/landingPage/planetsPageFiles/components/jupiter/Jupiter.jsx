@@ -1,8 +1,20 @@
 import React from "react";
 import JUPITER from "../../../../../assets/images/jupiter.png";
 import * as s from "../../style";
+import axios from "axios";
+import { useState } from "react";
 
 const Jupiter = () => {
+	const [planetName, setPlanetName] = useState();
+
+	const getPlanetData = () => {
+		axios
+			.get(`https://api.le-systeme-solaire.net/rest/bodies/terre`, (res) => {
+				res.json();
+			})
+			.then((data) => setPlanetName(data.data.englishName));
+	};
+	getPlanetData();
 	return (
 		<>
 			<s.Section id="jupiter">
@@ -28,7 +40,7 @@ const Jupiter = () => {
 							<s.Api_Link>api 2</s.Api_Link>
 							<s.Api_Link>api 3</s.Api_Link>
 						</s.Api_Links>
-						<s.Planet_Name>JUPITER</s.Planet_Name>
+						<s.Planet_Name>{planetName}</s.Planet_Name>
 						<s.Info_Headline>Jupiter is a great comet catcher.</s.Info_Headline>
 						<s.Info_Text>
 							<p>The most massive planet in the Solar System probably had a huge influence on its history.</p>

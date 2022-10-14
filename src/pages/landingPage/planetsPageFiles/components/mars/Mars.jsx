@@ -1,8 +1,20 @@
 import React from "react";
 import MARS from "../../../../../assets/images/mars.png";
 import * as s from "../../style";
+import axios from "axios";
+import { useState } from "react";
 
 const Mars = () => {
+	const [planetName, setPlanetName] = useState();
+
+	const getPlanetData = () => {
+		axios
+			.get(`https://api.le-systeme-solaire.net/rest/bodies/mars`, (res) => {
+				res.json();
+			})
+			.then((data) => setPlanetName(data.data.englishName));
+	};
+	getPlanetData();
 	return (
 		<>
 			<s.Section id="mars">
@@ -28,7 +40,7 @@ const Mars = () => {
 							<s.Api_Link>api 2</s.Api_Link>
 							<s.Api_Link>api 3</s.Api_Link>
 						</s.Api_Links>
-						<s.Planet_Name>MARS</s.Planet_Name>
+						<s.Planet_Name>{planetName}</s.Planet_Name>
 						<s.Info_Headline>Mars had a thicker atmosphere in the past.</s.Info_Headline>
 						<s.Info_Text>
 							<p>
