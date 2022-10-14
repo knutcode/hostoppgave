@@ -10,6 +10,10 @@ export const Section = styled.section`
 		flex-direction: column;
 		padding-top: 5rem;
 	}
+
+	@media screen and (max-width: 600px) {
+		margin: 0;
+	}
 `;
 
 ////////////////////////////////////////////////////////////////////////////////////////////
@@ -25,11 +29,12 @@ export const Planet_Container = styled.div`
 	justify-content: center;
 	align-items: center;
 
-	& a {
+	& p {
 		font-size: 0.6rem;
+		font-family: sans-serif;
 		color: grey;
 
-		& span {
+		& a {
 			color: var(--color-primary);
 
 			&:hover {
@@ -51,6 +56,10 @@ export const Planet = styled.div`
 		width: 16rem;
 		margin-top: 2.5rem;
 	}
+
+	@media screen and (max-width: 600px) {
+		width: 12rem;
+	}
 `;
 
 export const Img = styled.img`
@@ -58,13 +67,21 @@ export const Img = styled.img`
 	margin: auto;
 `;
 
-export const Api_Info = styled.h4`
+export const Api_Info_Absolute = styled.h4`
 	border-bottom: 2px solid var(--color-white);
 	position: absolute;
 	left: 22.7rem;
 	top: -0.4rem;
 	padding-inline: 0.5rem;
 	width: max-content;
+
+	@media screen and (max-width: 1300px) {
+		left: 15.6rem;
+	}
+
+	@media screen and (max-width: 600px) {
+		display: none;
+	}
 `;
 
 export const Angled_Line = styled.div`
@@ -74,6 +91,15 @@ export const Angled_Line = styled.div`
 	right: 2rem;
 	top: 2rem;
 	transform: rotate(-45deg);
+
+	@media screen and (max-width: 1300px) {
+		right: 0rem;
+		top: 2rem;
+	}
+
+	@media screen and (max-width: 600px) {
+		display: none;
+	}
 `;
 
 ////////////////////////////////////////////////////////////////////////////////////////////
@@ -84,23 +110,37 @@ export const Angled_Line = styled.div`
 export const Info_Container = styled.div`
 	width: 50%;
 	display: flex;
+	margin-top: 5rem;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+
+	@media screen and (max-width: 1300px) {
+		width: 80%;
+		margin-top: 1rem;
+	}
+
+	@media screen and (max-width: 600px) {
+		width: 100%;
+		margin-top: 2rem;
+	}
 `;
 
 export const Info_Container_Div = styled.div`
-	max-width: 70%;
+	width: 80%;
 
 	@media screen and (max-width: 1300px) {
-		max-width: 100%;
+		width: 100%;
 	}
 `;
 
 export const Api_Links = styled.div`
 	display: flex;
 	gap: 1rem;
-	margin-bottom: 2rem;
+
+	@media screen and (max-width: 600px) {
+		display: none;
+	}
 `;
 
 export const Api_Link = styled.h3`
@@ -110,6 +150,11 @@ export const Api_Link = styled.h3`
 export const Planet_Name = styled.h1`
 	font-size: 3.5rem;
 	font-family: AstroSpace, sans-serif;
+
+	@media screen and (max-width: 600px) {
+		font-size: 2.2rem;
+		text-align: center;
+	}
 `;
 
 export const Info_Headline = styled.h2`
@@ -117,6 +162,11 @@ export const Info_Headline = styled.h2`
 	font-size: 1.3rem;
 	color: var(--color-primary);
 	font-family: AstroSpace, sans-serif;
+
+	@media screen and (max-width: 600px) {
+		font-size: 1rem;
+		margin-block: 0.5rem;
+	}
 `;
 
 export const Info_Text = styled.p`
@@ -125,6 +175,10 @@ export const Info_Text = styled.p`
 	font-weight: 300;
 	font-size: 0.8rem;
 	line-height: 2;
+
+	@media screen and (max-width: 600px) {
+		font-size: 0.7rem;
+	}
 `;
 
 export const Info_Container_Underline = styled.div`
@@ -133,6 +187,6 @@ export const Info_Container_Underline = styled.div`
 	border-bottom: 1px solid var(--color-white);
 
 	@media screen and (max-width: 1300px) {
-		margin-bottom: 5rem;
+		margin-bottom: 2rem;
 	}
 `;

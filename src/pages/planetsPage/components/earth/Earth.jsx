@@ -10,12 +10,9 @@ const Earth = () => {
 					<s.Planet>
 						<s.Img src={EARTH} alt="earth" />
 
-						<s.Api_Info>Api Info</s.Api_Info>
+						<s.Api_Info_Absolute>Api Info</s.Api_Info_Absolute>
 						<s.Angled_Line />
 					</s.Planet>
-					<a href="https://www.freepik.com/free-vector/sun-moon-mercury-venus-earth-mars-jupiter-saturn-uranus-neptun-colorful-planets-set_13768792.htm#query=planets&position=23&from_view=keyword">
-						Image by <span>macrovector</span>
-					</a>
 				</s.Planet_Container>
 
 				<s.Info_Container>

@@ -11,6 +11,10 @@ export const Side_Navbar = styled.nav`
 	transform: translateY(-50%);
 	font-family: AstroSpace, sans-serif;
 
+	@media screen and (max-width: 600px) {
+		display: none;
+	}
+
 	/* Links in navbar */
 	& a {
 		padding-block: 0.9rem;
