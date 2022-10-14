@@ -6,7 +6,6 @@ export const Nav = styled.nav`
 	width: 100%;
 	display: flex;
 	justify-content: center;
-	font-family: sans-serif;
 `;
 
 export const Styled_Nav = styled.div`
@@ -46,11 +45,19 @@ export const Styled_Nav = styled.div`
 			letter-spacing: 0.3rem;
 		}
 	}
+
+	@media (max-width: 600px) {
+		height: 3rem;
+	} ;
 `;
 
 export const Nav_Links = styled.div`
 	display: flex;
 	gap: 1rem;
+
+	@media (max-width: 600px) {
+		font-size: 0.8rem;
+	} ;
 `;
 
 export const Styled_NavLink = styled(NavLink)`

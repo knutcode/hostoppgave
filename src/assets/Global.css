@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
 
 @font-face {
 	font-family: AstroSpace;
@@ -24,6 +24,7 @@
 	/*Miscellaneous*/
 	--color-bg: linear-gradient(#1f365a, #000);
 	--color-primary: rgb(6, 212, 227);
+	--color-primary-variant: #06d4e380;
 	--color-white: #fff;
 
 	--transition: all 400ms ease;
@@ -57,7 +58,7 @@ body {
 	color: var(--color-white);
 	/*Miscellaneous*/
 	line-height: 1.7;
-	font-family: 'Space Grotesk', sans-serif;
+	font-family: "Space Grotesk", sans-serif;
 }
 
 .container {
