@@ -74,7 +74,7 @@ export const Api_Info_Absolute = styled.h4`
 	top: -0.4rem;
 	padding-inline: 0.5rem;
 	width: max-content;
-	font-family: sans-serif;
+	font-family: "Orbitron", sans-serif;
 
 	@media screen and (max-width: 1300px) {
 		left: 15.6rem;
@@ -138,7 +138,7 @@ export const Info_Container_Div = styled.div`
 export const Api_Links = styled.div`
 	display: flex;
 	gap: 1rem;
-	font-family: sans-serif;
+	font-family: "Orbitron", sans-serif;
 
 	@media screen and (max-width: 600px) {
 		display: none;
