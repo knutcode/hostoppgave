@@ -43,7 +43,7 @@ export const Styled_Nav = styled.div`
 		}
 
 		&:hover {
-			letter-spacing: 0.5rem;
+			letter-spacing: 0.3rem;
 		}
 	}
 `;

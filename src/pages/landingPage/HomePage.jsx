@@ -1,24 +1,25 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import EARTH from "../../assets/images/earth.png";
 import * as s from "./homePageFiles/style";
 
 const HomePage = () => {
 	return (
 		<s.Main>
 			<div className="container">
-				<s.HeroContainer>
-					<s.SubHeader>PLANETS IN OUR</s.SubHeader>
-					<s.Headline>SOLAR SYSTEM</s.Headline>
-					<s.HeroLine />
-					<s.HeroText>
-						The Solar System is the gravitationally bound system of the Sun and the objects that orbit it.
-					</s.HeroText>
-					<Link to="/planets">
-						<s.HeroBtn>Start exploring!</s.HeroBtn>
-					</Link>
-				</s.HeroContainer>
+				<s.Hero_Container>
+					<s.Sub_Header>PLANETS IN OUR</s.Sub_Header>
+					<s.Header>SOLAR SYSTEM</s.Header>
+					<s.Header_Underline />
+					<s.Text>
+						The Solar System is the gravitationally bound system of the Sun and the
+						objects that orbit it.
+					</s.Text>
+					<s.CTA_Button to="/planets">Start exploring!</s.CTA_Button>
+				</s.Hero_Container>
 
-				<s.PlanetContainer />
+				<s.Planet_Container>
+					<img src={EARTH} alt="earth" />
+				</s.Planet_Container>
 			</div>
 		</s.Main>
 	);

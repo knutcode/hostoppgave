@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import "../../../assets/Global.css";
 
@@ -6,7 +7,7 @@ export const Main = styled.main`
 	height: 100vh;
 `;
 
-export const HeroContainer = styled.div`
+export const Hero_Container = styled.div`
 	width: 100%;
 	height: 500px;
 	display: flex;
@@ -15,78 +16,99 @@ export const HeroContainer = styled.div`
 	justify-content: space-between;
 	padding-top: 10rem;
 	margin-bottom: 7rem;
-	@media (max-width: 768px) {
-		padding-top: 5rem;
-		padding-bottom: 5rem;
+
+	@media screen and (max-width: 600px) {
+		padding-top: 2rem;
 		margin-bottom: 2rem;
+		height: fit-content;
+		justify-content: initial;
 	}
 `;
 
-export const Headline = styled.h1`
-	font-family: AstroSpace;
-	font-size: 64px;
-	line-height: 64px;
-	margin: 0;
-	white-space: nowrap;
-	@media (max-width: 768px) {
-		font-size: 48px;
-	}
-	@media (max-width: 400px) {
-		font-size: 36px;
-	}
-`;
-
-export const SubHeader = styled.h2`
+export const Sub_Header = styled.h2`
 	font-family: "Orbitron", sans-serif;
-	font-size: 28px;
-	line-height: 28px;
-	margin: 0;
-	@media (max-width: 768px) {
-		font-size: 20px;
+	font-size: 1.85rem;
+	line-height: 1.85rem;
+
+	@media screen and (max-width: 600px) {
+		font-size: 1.1rem;
+		margin-bottom: 0.2rem;
 	}
 `;
 
-export const HeroLine = styled.div`
+export const Header = styled.h1`
+	font-family: AstroSpace;
+	font-size: 4rem;
+	line-height: 4rem;
+	white-space: nowrap;
+
+	@media screen and (max-width: 600px) {
+		font-size: 3rem;
+	}
+	@media screen and (max-width: 450px) {
+		font-size: 2rem;
+	}
+`;
+
+export const Header_Underline = styled.div`
 	border-top: 3px solid var(--color-primary);
 	width: 200px;
-`;
 
-export const HeroText = styled.p`
-	font-size: 20px;
-	max-width: 45ch;
-	text-align: center;
-	@media (max-width: 768px) {
-		font-size: 16px;
+	@media screen and (max-width: 600px) {
+		margin-block: 0.5rem 1.1rem;
 	}
 `;
 
-export const HeroBtn = styled.button`
+export const Text = styled.p`
+	font-size: 1.2rem;
+	max-width: 45ch;
+	text-align: center;
+
+	@media screen and (max-width: 600px) {
+		font-size: 1rem;
+	}
+`;
+
+export const CTA_Button = styled(NavLink)`
 	border-radius: 100px;
 	padding: 0.5em 1em;
 	background: var(--color-white);
-	font-family: inherit;
-	font-size: 24px;
-	font-weight: bold;
+	font-size: 1.5rem;
+	color: black;
+	font-weight: 500;
 	cursor: pointer;
-	transition: 0.15s;
+	transition: var(--transition);
+
 	&:hover {
 		transform: scale(1.1);
 	}
-	@media (max-width: 768px) {
-		font-size: 20px;
+
+	@media screen and (max-width: 600px) {
+		font-size: 1.2rem;
+		margin-top: 1rem;
 	}
 `;
 
-export const PlanetContainer = styled.div`
-	width: 100%;
-	height: 50vw;
-	border-top-left-radius: 110vw;
-	border-top-right-radius: 110vw;
-	background-color: #006be9;
-	@media (max-width: 768px) {
-		height: 50vh;
-		transform: scaleX(2);
-		border-top-left-radius: 200vw;
-		border-top-right-radius: 200vw;
+export const Planet_Container = styled.div`
+	width: 70%;
+	aspect-ratio: 1/1;
+	margin: auto;
+	border-radius: 50%;
+	overflow: hidden;
+	position: relative;
+
+	& img {
+		height: 110%;
+		aspect-ratio: 1/1;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+
+	@media screen and (max-width: 600px) {
+		width: 90%;
 	}
 `;
