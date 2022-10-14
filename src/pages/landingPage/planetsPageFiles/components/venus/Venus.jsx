@@ -1,5 +1,5 @@
 import React from "react";
-import VENUS from "../../../../assets/images/venus.png";
+import VENUS from "../../../../../assets/images/venus.png";
 import * as s from "../../style";
 
 const Venus = () => {
@@ -29,25 +29,22 @@ const Venus = () => {
 							<s.Api_Link>Mass</s.Api_Link>
 						</s.Api_Links>
 						<s.Planet_Name>VENUS</s.Planet_Name>
-						<s.Info_Headline>
-							Venus doesn't have any moons, and we aren't sure why.
-						</s.Info_Headline>
+						<s.Info_Headline>Venus doesn't have any moons, and we aren't sure why.</s.Info_Headline>
 						<s.Info_Text>
 							<p>
-								Both Mercury and Venus have no moons, which can be considered a
-								surprise given there are dozens of other ones around the Solar
-								System.
+								Both Mercury and Venus have no moons, which can be considered a surprise given there are dozens of other ones
+								around the Solar System.
 							</p>
 							<p>Saturn has over 60, for example.</p>
 							<p>
-								And some moons are little more than captured asteroids, which may
-								have been what happened with Mars' two moons, for example.
+								And some moons are little more than captured asteroids, which may have been what happened with Mars' two
+								moons, for example.
 							</p>
 							<br />
 							<p>So what makes these planets different?</p>
 							<p>
-								No one is really sure why Venus doesn't, but there is at least one
-								stream of research that suggests it could have had one in the past.
+								No one is really sure why Venus doesn't, but there is at least one stream of research that suggests it could
+								have had one in the past.
 							</p>
 						</s.Info_Text>
 						<s.Info_Container_Underline />

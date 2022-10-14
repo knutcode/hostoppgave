@@ -1,10 +1,10 @@
 import React from "react";
 import { FaSpaceShuttle } from "react-icons/fa";
 import { Route, Routes } from "react-router";
-import ContactPage from "../../contactPage";
-import ErrorPage from "../../errorPage";
-import LandingPage from "../../homePage";
-import PlanetsPage from "../../planetsPage";
+import ContactPage from "../../landingPage/ContactPage";
+import ErrorPage from "../../landingPage/ErrorPage";
+import LandingPage from "../../landingPage/HomePage";
+import PlanetsPage from "../../landingPage/PlanetsPage";
 import * as s from "./style";
 
 const Navbar = () => {

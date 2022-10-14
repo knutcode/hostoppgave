@@ -1,14 +1,14 @@
 import React from "react";
-import NEPTUNE from "../../../../assets/images/neptune.png";
+import EARTH from "../../../../../assets/images/earth.png";
 import * as s from "../../style";
 
-const Neptune = () => {
+const Earth = () => {
 	return (
 		<>
-			<s.Section id="neptune">
+			<s.Section id="earth">
 				<s.Planet_Container>
 					<s.Planet>
-						<s.Img src={NEPTUNE} alt="neptune" />
+						<s.Img src={EARTH} alt="earth" />
 
 						<s.Api_Info_Absolute>Api Info</s.Api_Info_Absolute>
 						<s.Angled_Line />
@@ -28,25 +28,22 @@ const Neptune = () => {
 							<s.Api_Link>api 2</s.Api_Link>
 							<s.Api_Link>api 3</s.Api_Link>
 						</s.Api_Links>
-						<s.Planet_Name>NEPTUNE</s.Planet_Name>
-						<s.Info_Headline>Neptune has supersonic winds. </s.Info_Headline>
+						<s.Planet_Name>EARTH</s.Planet_Name>
+						<s.Info_Headline>You can see Earth's magnetic field at work during light shows.</s.Info_Headline>
 						<s.Info_Text>
 							<p>
-								While on Earth we are concerned about hurricanes, the strength of
-								these storms is nowhere near what you would find on Neptune.
-							</p>
-							<p>
-								At its highest altitudes, according to NASA, winds blow at more than
-								1,100 miles per hour (1,770 kilometers per hour).
-							</p>
-							<p>
-								To put that in context, that's faster than the speed of sound on
-								Earth, at sea level.
+								We have a magnetic field surrounding our planet that protects us from the blasts of radiation and particles
+								the Sun sends our way.
 							</p>
 							<br />
 							<p>
-								Why Neptune is so blustery is a mystery, especially considering the
-								Sun's heat is so little at its distance.
+								Good thing, too, because such flare-ups could prove deadly to unprotected people; that's why NASA keeps an
+								eye on solar activity for astronauts on the International Space Station, for example.
+							</p>
+							<br />
+							<p>
+								At any rate, when you see auroras shining in the sky, that's what happens when the particles from the Sun
+								flow along the magnetic field lines and interact with Earth's upper atmosphere.
 							</p>
 						</s.Info_Text>
 						<s.Info_Container_Underline />
@@ -57,4 +54,4 @@ const Neptune = () => {
 	);
 };
 
-export default Neptune;
+export default Earth;

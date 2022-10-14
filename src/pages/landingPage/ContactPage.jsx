@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { AiOutlineLinkedin, AiOutlineTwitter } from "react-icons/ai";
 import { BsDiscord } from "react-icons/bs";
-import * as s from "./style";
-import SubmitForm from "./Submit";
+import * as s from "./contactPageFiles/style";
+import SubmitForm from "./contactPageFiles/Submit";
 
 const ContactPage = () => {
 	const [isDesktop, setDesktop] = useState(window.innerWidth > 1090);
