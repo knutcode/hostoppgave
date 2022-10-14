@@ -1,4 +1,5 @@
 import React from "react";
+import { FaSpaceShuttle } from "react-icons/fa";
 import { Route, Routes } from "react-router";
 import ContactPage from "../../contactPage";
 import ErrorPage from "../../errorPage";
@@ -12,6 +13,7 @@ const Navbar = () => {
 			<s.Nav>
 				<s.Styled_Nav>
 					<h2>
+						<FaSpaceShuttle className="icon" />
 						Lo<s.Logo_Span>go</s.Logo_Span>
 					</h2>
 					<s.Nav_Links>

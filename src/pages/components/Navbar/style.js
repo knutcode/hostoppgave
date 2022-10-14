@@ -20,6 +20,14 @@ export const Styled_Nav = styled.div`
 	border-bottom: 1px solid var(--color-white);
 	backdrop-filter: blur(10px);
 	z-index: 1;
+
+	& h2 {
+		& .icon {
+			font-size: 2.5rem;
+			vertical-align: middle;
+			margin-inline: 0.5rem;
+		}
+	}
 `;
 
 export const Logo_Span = styled.span`
