@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const ContactContainer = styled.div`
+	height: 90vh;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -9,13 +10,9 @@ export const ContactContainer = styled.div`
 	} ;
 `;
 
-export const ContactLeft = styled.div`
-	margin: 130px 0px 0px 70px;
-`;
+export const ContactLeft = styled.div``;
 
-export const ContactRight = styled.div`
-	margin: 130px 50px 0px 0px;
-`;
+export const ContactRight = styled.div``;
 
 export const ContactInfo = styled.div`
 	margin-bottom: 3rem;
@@ -52,12 +49,13 @@ export const Comment = styled.textarea`
 
 export const Title = styled.h1`
 	color: var(--color-primary);
-	font-size: 28px;
+	font-size: 24px;
 	letter-spacing: 5px;
+	font-family: AstroSpace;
 `;
 export const Text = styled.h2`
-	font-size: 14px;
-	font-weight: 600;
+	font-size: 20px;
+	font-weight: 400;
 	letter-spacing: 3px;
 `;
 

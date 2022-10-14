@@ -18,6 +18,7 @@ export const HeroContainer = styled.div`
 `;
 
 export const Headline = styled.h1`
+	font-family: AstroSpace;
 	font-size: 64px;
 	line-height: 64px;
 	margin: 0;
@@ -31,6 +32,7 @@ export const Headline = styled.h1`
 `;
 
 export const SubHeader = styled.h2`
+	font-family: 'Orbitron', sans-serif;
 	font-size: 28px;
 	line-height: 28px;
 	margin: 0;
@@ -46,6 +48,8 @@ export const HeroLine = styled.div`
 
 export const HeroText = styled.p`
 	font-size: 20px;
+	max-width: 45ch;
+	text-align: center;
 	@media (max-width: 768px) {
 		font-size: 16px;
 	}
