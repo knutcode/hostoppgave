@@ -21,11 +21,19 @@ export const Styled_Nav = styled.div`
 	backdrop-filter: blur(10px);
 	z-index: 1;
 
-	& h2 {
+	& div {
+		display: flex;
+
 		& .icon {
 			font-size: 2.5rem;
 			vertical-align: middle;
 			margin-inline: 0.5rem;
+		}
+
+		& h2 {
+			@media screen and (max-width: 600px) {
+				display: none;
+			}
 		}
 	}
 `;
