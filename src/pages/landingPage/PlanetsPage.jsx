@@ -1,13 +1,13 @@
 import React from "react";
-import Earth from "./planetsPage/components/earth/Earth";
-import Jupiter from "./planetsPage/components/jupiter/Jupiter";
-import Mars from "./planetsPage/components/mars/Mars";
-import Mercury from "./planetsPage/components/mercury/Mercury";
-import Neptune from "./planetsPage/components/neptune/Neptune";
-import Saturn from "./planetsPage/components/saturn/Saturn";
-import SideNavbar from "./planetsPage/components/sideNavbar/SideNavbar";
-import Uranus from "./planetsPage/components/uranus/Uranus";
-import Venus from "./planetsPage/components/venus/Venus";
+import Earth from "./planetsPageFiles/components/earth/Earth";
+import Jupiter from "./planetsPageFiles/components/jupiter/Jupiter";
+import Mars from "./planetsPageFiles/components/mars/Mars";
+import Mercury from "./planetsPageFiles/components/mercury/Mercury";
+import Neptune from "./planetsPageFiles/components/neptune/Neptune";
+import Saturn from "./planetsPageFiles/components/saturn/Saturn";
+import SideNavbar from "./planetsPageFiles/components/sideNavbar/SideNavbar";
+import Uranus from "./planetsPageFiles/components/uranus/Uranus";
+import Venus from "./planetsPageFiles/components/venus/Venus";
 
 const PlanetsPage = () => {
 	return (
