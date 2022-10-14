@@ -15,6 +15,10 @@ export const HeroContainer = styled.div`
 	justify-content: space-between;
 	padding-top: 10rem;
 	margin-bottom: 7rem;
+	@media (max-width: 768px) {
+		padding-top: 5rem;
+		padding-bottom: 5rem;
+	}
 `;
 
 export const Headline = styled.h1`
