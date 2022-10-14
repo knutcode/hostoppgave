@@ -74,6 +74,7 @@ export const Api_Info_Absolute = styled.h4`
 	top: -0.4rem;
 	padding-inline: 0.5rem;
 	width: max-content;
+	font-family: sans-serif;
 
 	@media screen and (max-width: 1300px) {
 		left: 15.6rem;
@@ -121,7 +122,7 @@ export const Info_Container = styled.div`
 	}
 
 	@media screen and (max-width: 600px) {
-		width: 100%;
+		width: 90%;
 		margin-top: 2rem;
 	}
 `;
@@ -137,6 +138,7 @@ export const Info_Container_Div = styled.div`
 export const Api_Links = styled.div`
 	display: flex;
 	gap: 1rem;
+	font-family: sans-serif;
 
 	@media screen and (max-width: 600px) {
 		display: none;
@@ -173,11 +175,11 @@ export const Info_Text = styled.p`
 	font-family: AstroSpace, sans-serif;
 	margin-bottom: 2rem;
 	font-weight: 300;
-	font-size: 0.8rem;
-	line-height: 2;
+	font-size: 1.1rem;
+	font-family: sans-serif;
 
 	@media screen and (max-width: 600px) {
-		font-size: 0.7rem;
+		font-size: 1rem;
 	}
 `;
 
