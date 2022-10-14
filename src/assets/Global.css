@@ -35,8 +35,12 @@
 	--container-width-small: 90%;
 }
 
+::placeholder{
+	color: var(--color-primary);
+}
+
 ::-webkit-scrollbar {
-	display: none; /* Remove scrollbar for Chrome, Safari, Microsoft Edge and Opera */
+	display: none; Remove scrollbar for Chrome, Safari, Microsoft Edge and Opera
 }
 
 html {
