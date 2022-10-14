@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Route, Routes } from "react-router";
 import ContactPage from "../../contactPage";
 import ErrorPage from "../../errorPage";
@@ -7,42 +7,28 @@ import PlanetsPage from "../../planetsPage";
 import * as s from "./style";
 
 const Navbar = () => {
-	const [activeNav, setActiveNav] = useState("home");
-
 	return (
 		<>
 			<s.Nav>
-				<s.StyledNav>
+				<s.Styled_Nav>
 					<h2>
-						Lo<s.LogoSpan>go</s.LogoSpan>
+						Lo<s.Logo_Span>go</s.Logo_Span>
 					</h2>
-					<s.NavLinks>
-						<s.StyledLink
-							to="/"
-							className={activeNav === "home" ? "active" : ""}
-							onClick={() => setActiveNav("home")}
-						>
+					<s.Nav_Links>
+						<s.Styled_NavLink to="/home" activeClassName="active">
 							Home
-						</s.StyledLink>
-						<s.StyledLink
-							to="/planets"
-							className={activeNav === "planets" ? "active" : ""}
-							onClick={() => setActiveNav("planets")}
-						>
+						</s.Styled_NavLink>
+						<s.Styled_NavLink to="/planets" activeClassName="active">
 							Planets
-						</s.StyledLink>
-						<s.StyledLink
-							to="/contact"
-							className={activeNav === "contact" ? "active" : ""}
-							onClick={() => setActiveNav("contact")}
-						>
-							Contact
-						</s.StyledLink>
-					</s.NavLinks>
-				</s.StyledNav>
+						</s.Styled_NavLink>
+						<s.Styled_NavLink to="/contact" activeClassName="active">
+							Contact Us
+						</s.Styled_NavLink>
+					</s.Nav_Links>
+				</s.Styled_Nav>
 			</s.Nav>
 			<Routes>
-				<Route path="/" element={<LandingPage />} />
+				<Route path="/home" element={<LandingPage />} />
 				<Route path="/planets" element={<PlanetsPage />} />
 				<Route path="/contact" element={<ContactPage />} />
 				<Route path="*" element={<ErrorPage />} />

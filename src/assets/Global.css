@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@100;200;300;400;500;600;700&display=swap");
 
+@font-face {
+	font-family: AstroSpace;
+	src: url(AstroSpace.otf);
+}
+
 *,
 *::before,
 *::after {
@@ -32,11 +37,14 @@
 
 ::placeholder{
 	color: var(--color-primary);
+/* ::-webkit-scrollbar {
+	display: none; Remove scrollbar for Chrome, Safari, Microsoft Edge and Opera */
 }
 
 html {
 	/*Miscellaneous*/
 	scroll-behavior: smooth;
+	scrollbar-width: none; /* Remove scrollbar for Firefox */
 }
 
 body {
