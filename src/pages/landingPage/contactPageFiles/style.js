@@ -85,6 +85,7 @@ export const Submit_Btn = styled.button`
 
 	&:hover {
 		transform: scale(1.1);
+		background: var(--color-white);
 	}
 
 	@media (max-width: 600px) {
