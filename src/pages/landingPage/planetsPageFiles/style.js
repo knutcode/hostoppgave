@@ -185,7 +185,6 @@ export const Info_Headline = styled.h2`
 
 export const Info_Text = styled.div`
 	margin-bottom: 2rem;
-	font-weight: 300;
 	font-size: 1.1rem;
 	font-weight: 500;
 
