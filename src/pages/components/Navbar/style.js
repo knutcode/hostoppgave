@@ -6,7 +6,6 @@ export const Nav = styled.nav`
 	width: 100%;
 	display: flex;
 	justify-content: center;
-	font-family: sans-serif;
 `;
 
 export const Styled_Nav = styled.div`
@@ -21,8 +20,10 @@ export const Styled_Nav = styled.div`
 	backdrop-filter: blur(10px);
 	z-index: 1;
 
-	& div {
+	& .logoContainer {
 		display: flex;
+		color: var(--color-white);
+		transition: var(--transition);
 
 		& .icon {
 			font-size: 2.5rem;
@@ -35,16 +36,28 @@ export const Styled_Nav = styled.div`
 				display: none;
 			}
 		}
-	}
-`;
 
-export const Logo_Span = styled.span`
-	color: var(--color-primary);
+		& span {
+			color: var(--color-primary);
+		}
+
+		&:hover {
+			letter-spacing: 0.3rem;
+		}
+	}
+
+	@media (max-width: 600px) {
+		height: 3rem;
+	} ;
 `;
 
 export const Nav_Links = styled.div`
 	display: flex;
 	gap: 1rem;
+
+	@media (max-width: 600px) {
+		font-size: 0.8rem;
+	} ;
 `;
 
 export const Styled_NavLink = styled(NavLink)`

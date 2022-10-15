@@ -8,7 +8,7 @@ const ContactPage = () => {
 	const [isDesktop, setDesktop] = useState(window.innerWidth > 1090);
 
 	const updateMedia = () => {
-		setDesktop(window.innerWidth > 1090);
+		setDesktop(window.innerWidth > 600);
 	};
 
 	useEffect(() => {
@@ -18,42 +18,46 @@ const ContactPage = () => {
 	return (
 		<section>
 			<div className="container">
-				<s.ContactContainer>
+				<s.Container>
 					{/* Delen hvor vi lager boxen som man kan skriv inn i */}
-					<s.ContactLeft>
-						<s.User type="text" placeholder="Name" />
-						<s.User type="email" placeholder="Mail" />
+					<s.Form_Container>
+						<s.Name_Email type="text" placeholder="Name" />
+						<s.Name_Email type="email" placeholder="Mail" />
 						<s.Comment placeholder="Comment" />
 						<br />
-						<s.SubmitBtn onClick={SubmitForm}>Submit</s.SubmitBtn>
-					</s.ContactLeft>
-					<s.ContactRight>
+						<s.Submit_Btn onClick={SubmitForm}>Submit</s.Submit_Btn>
+					</s.Form_Container>
+
+					<s.Contact_Container>
 						{/* Delen hvor vi gir vår kontakt informasjon */}
-						<s.ContactInfo>
+						<s.Contact_Info>
 							<s.Title>Contact information</s.Title>
-							<s.Text>Hjemmeaddressen 15B, Bergen</s.Text>
-							<s.Text>+47 123 45 678</s.Text>
-						</s.ContactInfo>
+							<s.Text>
+								Hjemmeaddressen 15B, Bergen
+								<br />
+								+47 123 45 678
+							</s.Text>
+						</s.Contact_Info>
+
 						{/* Delen hvor vi gir muligheter å nå oss på */}
-						<s.ContactLink>
+						<div>
 							<s.Title>Find us at</s.Title>
-							<s.LinkWrapper>
-								<s.Link href="">
-									{" "}
-									{isDesktop ? "Discord" : ""} <BsDiscord />
-								</s.Link>
-								<s.Link href="">
-									{" "}
-									{isDesktop ? "Twitter" : ""} <AiOutlineTwitter />
-								</s.Link>
-								<s.Link href="">
-									{" "}
-									{isDesktop ? "LinkedIn" : ""} <AiOutlineLinkedin />
-								</s.Link>
-							</s.LinkWrapper>
-						</s.ContactLink>
-					</s.ContactRight>
-				</s.ContactContainer>
+							<s.Socials_Container>
+								<s.Socials href="">
+									{isDesktop ? "Discord" : ""} <BsDiscord className="icon" />
+								</s.Socials>
+								<s.Socials href="">
+									{isDesktop ? "Twitter" : ""}
+									<AiOutlineTwitter className="icon" />
+								</s.Socials>
+								<s.Socials href="">
+									{isDesktop ? "LinkedIn" : ""}
+									<AiOutlineLinkedin className="icon" />
+								</s.Socials>
+							</s.Socials_Container>
+						</div>
+					</s.Contact_Container>
+				</s.Container>
 			</div>
 		</section>
 	);
