@@ -23,8 +23,6 @@
 :root {
 	/*Miscellaneous*/
 	--color-bg: linear-gradient(#1f365a, #000);
-	/* --color-bg: linear-gradient(-205deg, #1c222e, #000); */
-
 	--color-primary: rgb(6, 212, 227);
 	--color-primary-variant: #06d4e380;
 	--color-white: #fff;
