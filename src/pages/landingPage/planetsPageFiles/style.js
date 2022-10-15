@@ -184,11 +184,10 @@ export const Info_Headline = styled.h2`
 `;
 
 export const Info_Text = styled.div`
-	font-family: AstroSpace, sans-serif;
 	margin-bottom: 2rem;
 	font-weight: 300;
 	font-size: 1.1rem;
-	font-family: sans-serif;
+	font-weight: 500;
 
 	@media screen and (max-width: 600px) {
 		font-size: 1rem;
