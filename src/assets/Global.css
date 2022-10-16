@@ -53,6 +53,8 @@ html {
 body {
 	/*Box model stuff*/
 	background: var(--color-bg);
+	background-size: cover;
+	background-repeat: no-repeat;
 	background-attachment: fixed;
 	/*Typography stuff*/
 	color: var(--color-white);

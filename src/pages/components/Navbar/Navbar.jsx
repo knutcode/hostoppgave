@@ -13,14 +13,14 @@ const Navbar = () => {
 		<>
 			<s.Nav>
 				<s.Styled_Nav>
-					<NavLink to="/home" className="logoContainer">
+					<NavLink to="/" exact className="logoContainer">
 						<FaSpaceShuttle className="icon" />
 						<h2>
 							LO<span>GO</span>
 						</h2>
 					</NavLink>
 					<s.Nav_Links>
-						<s.Styled_NavLink to="/home" activeclassname="active">
+						<s.Styled_NavLink end to="/" exact activeclassname="active">
 							Home
 						</s.Styled_NavLink>
 						<s.Styled_NavLink to="/planets" activeclassname="active">
@@ -33,7 +33,7 @@ const Navbar = () => {
 				</s.Styled_Nav>
 			</s.Nav>
 			<Routes>
-				<Route path="/home" element={<LandingPage />} />
+				<Route path="/" exact element={<LandingPage />} />
 				<Route path="/planets" element={<PlanetsPage />} />
 				<Route path="/contact" element={<ContactPage />} />
 				<Route path="*" element={<ErrorPage />} />
