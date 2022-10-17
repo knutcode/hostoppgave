@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-	height: 100vh;
 	margin-top: -5rem;
+	height: 100vh;
 	display: flex;
 	gap: 5rem;
 	flex-direction: row;
@@ -11,12 +11,13 @@ export const Container = styled.div`
 
 	@media (max-width: 1300px) {
 		gap: 0;
+		padding-top: 8rem;
 		flex-direction: column;
-		justify-content: center;
+		justify-content: initial;
 	}
 
 	@media (max-width: 600px) {
-		margin-top: 5rem;
+		padding-top: 6rem;
 	} ;
 `;
 
