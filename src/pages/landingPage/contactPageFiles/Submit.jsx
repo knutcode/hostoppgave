@@ -1,6 +1,6 @@
 function SubmitForm() {
-	window.location.reload();
-	alert("Your comment have been submitted");
+	if (alert("Your mail has been submitted!")) {
+	} else window.location.reload();
 }
 
 export default SubmitForm;
