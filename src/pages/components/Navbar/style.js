@@ -8,12 +8,12 @@ export const Nav = styled.nav`
 	justify-content: center;
 `;
 
-export const Styled_Nav = styled.div`
+export const Nav_Content = styled.div`
 	position: fixed;
 	height: 5rem;
 	display: flex;
 	gap: 1rem;
-	width: var(--container-width-large);
+	width: var(--container-width);
 	justify-content: space-between;
 	align-items: center;
 	border-bottom: 1px solid var(--color-white);

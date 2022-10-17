@@ -31,9 +31,7 @@
 
 	--border: 2px;
 
-	--container-width-large: 90%;
-	--container-width-medium: 86%;
-	--container-width-small: 90%;
+	--container-width: 90%;
 }
 
 ::placeholder {
@@ -65,7 +63,7 @@ body {
 
 .container {
 	/*Box model stuff*/
-	width: var(--container-width-large);
+	width: var(--container-width);
 	margin: 0 auto;
 	padding-top: 5rem;
 }

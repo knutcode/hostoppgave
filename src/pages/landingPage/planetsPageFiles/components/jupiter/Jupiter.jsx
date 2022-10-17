@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useState } from "react";
 import JUPITER from "../../../../../assets/images/jupiter.png";
-import * as s from "../../style";
+import * as style from "../../style";
 
 const Jupiter = () => {
 	const [active, setActive] = useState("");
@@ -28,26 +28,26 @@ const Jupiter = () => {
 
 	return (
 		<>
-			<s.Section id="jupiter">
-				<s.Planet_Container>
-					<s.Planet>
-						<s.Img src={JUPITER} alt="jupiter" />
+			<style.Section id="jupiter">
+				<style.Planet_Container>
+					<style.Planet>
+						<style.Img src={JUPITER} alt="jupiter" />
 
-						<s.Api_Info_Absolute>{api}</s.Api_Info_Absolute>
-						<s.Angled_Line />
-					</s.Planet>
+						<style.Api_Info_Absolute>{api}</style.Api_Info_Absolute>
+						<style.Angled_Line />
+					</style.Planet>
 					<p>
 						Image by &nbsp;
 						<a href="https://www.freepik.com/free-vector/sun-moon-mercury-venus-earth-mars-jupiter-saturn-uranus-neptun-colorful-planets-set_13768792.htm#query=planets&position=23&from_view=keyword">
 							macrovector
 						</a>
 					</p>
-				</s.Planet_Container>
+				</style.Planet_Container>
 
-				<s.Info_Container>
-					<s.Info_Container_Div>
-						<s.Api_Links>
-							<s.Api_Link
+				<style.Info_Container>
+					<style.Info_Container_Div>
+						<style.Api_Links>
+							<style.Api_Link
 								className={active === "temp" ? "active" : ""}
 								onClick={() => {
 									setApi((avgTemp - 273.15).toFixed(1) + " °C");
@@ -55,8 +55,8 @@ const Jupiter = () => {
 								}}
 							>
 								Avg.Temp.
-							</s.Api_Link>
-							<s.Api_Link
+							</style.Api_Link>
+							<style.Api_Link
 								className={active === "gravity" ? "active" : ""}
 								onClick={() => {
 									setApi(gravity.toFixed(1) + " m/s²");
@@ -64,8 +64,8 @@ const Jupiter = () => {
 								}}
 							>
 								Gravity
-							</s.Api_Link>
-							<s.Api_Link
+							</style.Api_Link>
+							<style.Api_Link
 								className={active === "density" ? "active" : ""}
 								onClick={() => {
 									setApi(density.toFixed(2) + " g/cm³");
@@ -73,11 +73,11 @@ const Jupiter = () => {
 								}}
 							>
 								Density
-							</s.Api_Link>
-						</s.Api_Links>
-						<s.Planet_Name>{planetName}</s.Planet_Name>
-						<s.Info_Headline>Jupiter is a great comet catcher.</s.Info_Headline>
-						<s.Info_Text>
+							</style.Api_Link>
+						</style.Api_Links>
+						<style.Planet_Name>{planetName}</style.Planet_Name>
+						<style.Info_Headline>Jupiter is a great comet catcher.</style.Info_Headline>
+						<style.Info_Text>
 							<p>
 								The most massive planet in the Solar System probably had a huge
 								influence on its history.
@@ -97,14 +97,14 @@ const Jupiter = () => {
 							<br />
 							<p>
 								And in 1994, astronomers worldwide were treated to a rare sight: a
-								comet, Shoemaker-Levy 9, breaking up under Jupiter's gravity and
+								comet, Shoemaker-Levy 9, breaking up under Jupiter'style gravity and
 								slamming into the atmosphere.
 							</p>
-						</s.Info_Text>
-						<s.Info_Container_Underline />
-					</s.Info_Container_Div>
-				</s.Info_Container>
-			</s.Section>
+						</style.Info_Text>
+						<style.Info_Container_Underline />
+					</style.Info_Container_Div>
+				</style.Info_Container>
+			</style.Section>
 		</>
 	);
 };

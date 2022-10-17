@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { AiOutlineLinkedin, AiOutlineTwitter } from "react-icons/ai";
 import { BsDiscord } from "react-icons/bs";
-import * as s from "./contactPageFiles/style";
+import * as style from "./contactPageFiles/style";
 import SubmitForm from "./contactPageFiles/Submit";
 
 const ContactPage = () => {
@@ -18,46 +18,46 @@ const ContactPage = () => {
 	return (
 		<section>
 			<div className="container">
-				<s.Container>
+				<style.Container>
 					{/* Delen hvor vi lager boxen som man kan skriv inn i */}
-					<s.Form_Container>
-						<s.Name_Email type="text" placeholder="Name" />
-						<s.Name_Email type="email" placeholder="Mail" />
-						<s.Comment placeholder="Comment" />
+					<style.Form_Container>
+						<style.Name_Email type="text" placeholder="Name" />
+						<style.Name_Email type="email" placeholder="Mail" />
+						<style.Comment placeholder="Comment" />
 						<br />
-						<s.Submit_Btn onClick={SubmitForm}>Submit</s.Submit_Btn>
-					</s.Form_Container>
+						<style.Submit_Btn onClick={SubmitForm}>Submit</style.Submit_Btn>
+					</style.Form_Container>
 
-					<s.Contact_Container>
+					<style.Contact_Container>
 						{/* Delen hvor vi gir vår kontakt informasjon */}
-						<s.Contact_Info>
-							<s.Title>Contact information</s.Title>
-							<s.Text>
+						<style.Contact_Info>
+							<style.Title>Contact information</style.Title>
+							<style.Text>
 								Hjemmeaddressen 15B, Bergen
 								<br />
 								+47 123 45 678
-							</s.Text>
-						</s.Contact_Info>
+							</style.Text>
+						</style.Contact_Info>
 
 						{/* Delen hvor vi gir muligheter å nå oss på */}
 						<div>
-							<s.Title>Find us at</s.Title>
-							<s.Socials_Container>
-								<s.Socials href="">
+							<style.Title>Find us at</style.Title>
+							<style.Socials_Container>
+								<style.Socials href="">
 									{isDesktop ? "Discord" : ""} <BsDiscord className="icon" />
-								</s.Socials>
-								<s.Socials href="">
+								</style.Socials>
+								<style.Socials href="">
 									{isDesktop ? "Twitter" : ""}
 									<AiOutlineTwitter className="icon" />
-								</s.Socials>
-								<s.Socials href="">
+								</style.Socials>
+								<style.Socials href="">
 									{isDesktop ? "LinkedIn" : ""}
 									<AiOutlineLinkedin className="icon" />
-								</s.Socials>
-							</s.Socials_Container>
+								</style.Socials>
+							</style.Socials_Container>
 						</div>
-					</s.Contact_Container>
-				</s.Container>
+					</style.Contact_Container>
+				</style.Container>
 			</div>
 		</section>
 	);

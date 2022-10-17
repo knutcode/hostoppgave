@@ -1,12 +1,12 @@
 import { Link } from "react-scroll";
-import * as s from "./style";
+import * as style from "./style";
 
 import React from "react";
 
 const SideNavbar = () => {
 	return (
 		<>
-			<s.Side_Navbar>
+			<style.Side_Navbar>
 				<Link to="mercury" spy={true} smooth={true} offset={0} duration={400}>
 					Mercury
 				</Link>
@@ -31,7 +31,7 @@ const SideNavbar = () => {
 				<Link to="neptune" spy={true} smooth={true} offset={0} duration={400}>
 					Neptune
 				</Link>
-			</s.Side_Navbar>
+			</style.Side_Navbar>
 		</>
 	);
 };

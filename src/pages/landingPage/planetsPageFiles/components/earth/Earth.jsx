@@ -2,7 +2,7 @@
 import axios from "axios";
 import React, { useState } from "react";
 import EARTH from "../../../../../assets/images/earth.png";
-import * as s from "../../style";
+import * as style from "../../style";
 
 const Earth = () => {
 	const [active, setActive] = useState("");
@@ -29,26 +29,26 @@ const Earth = () => {
 
 	return (
 		<>
-			<s.Section id="earth">
-				<s.Planet_Container>
-					<s.Planet>
-						<s.Img src={EARTH} alt="earth" />
+			<style.Section id="earth">
+				<style.Planet_Container>
+					<style.Planet>
+						<style.Img src={EARTH} alt="earth" />
 
-						<s.Api_Info_Absolute>{api}</s.Api_Info_Absolute>
-						<s.Angled_Line />
-					</s.Planet>
+						<style.Api_Info_Absolute>{api}</style.Api_Info_Absolute>
+						<style.Angled_Line />
+					</style.Planet>
 					<p>
 						Image by &nbsp;
 						<a href="https://www.freepik.com/free-vector/sun-moon-mercury-venus-earth-mars-jupiter-saturn-uranus-neptun-colorful-planets-set_13768792.htm#query=planets&position=23&from_view=keyword">
 							macrovector
 						</a>
 					</p>
-				</s.Planet_Container>
+				</style.Planet_Container>
 
-				<s.Info_Container>
-					<s.Info_Container_Div>
-						<s.Api_Links>
-							<s.Api_Link
+				<style.Info_Container>
+					<style.Info_Container_Div>
+						<style.Api_Links>
+							<style.Api_Link
 								className={active === "temp" ? "active" : ""}
 								onClick={() => {
 									setApi((avgTemp - 273.15).toFixed(1) + " °C");
@@ -56,8 +56,8 @@ const Earth = () => {
 								}}
 							>
 								Avg.Temp.
-							</s.Api_Link>
-							<s.Api_Link
+							</style.Api_Link>
+							<style.Api_Link
 								className={active === "gravity" ? "active" : ""}
 								onClick={() => {
 									setApi(gravity.toFixed(1) + " m/s²");
@@ -65,8 +65,8 @@ const Earth = () => {
 								}}
 							>
 								Gravity
-							</s.Api_Link>
-							<s.Api_Link
+							</style.Api_Link>
+							<style.Api_Link
 								className={active === "density" ? "active" : ""}
 								onClick={() => {
 									setApi(density.toFixed(2) + " g/cm³");
@@ -74,13 +74,13 @@ const Earth = () => {
 								}}
 							>
 								Density
-							</s.Api_Link>
-						</s.Api_Links>
-						<s.Planet_Name>{planetName}</s.Planet_Name>
-						<s.Info_Headline>
-							You can see Earth's magnetic field at work during light shows.
-						</s.Info_Headline>
-						<s.Info_Text>
+							</style.Api_Link>
+						</style.Api_Links>
+						<style.Planet_Name>{planetName}</style.Planet_Name>
+						<style.Info_Headline>
+							You can see Earth'style magnetic field at work during light shows.
+						</style.Info_Headline>
+						<style.Info_Text>
 							<p>
 								We have a magnetic field surrounding our planet that protects us
 								from the blasts of radiation and particles the Sun sends our way.
@@ -88,20 +88,21 @@ const Earth = () => {
 							<br />
 							<p>
 								Good thing, too, because such flare-ups could prove deadly to
-								unprotected people; that's why NASA keeps an eye on solar activity
-								for astronauts on the International Space Station, for example.
+								unprotected people; that'style why NASA keeps an eye on solar
+								activity for astronauts on the International Space Station, for
+								example.
 							</p>
 							<br />
 							<p>
-								At any rate, when you see auroras shining in the sky, that's what
-								happens when the particles from the Sun flow along the magnetic
-								field lines and interact with Earth's upper atmosphere.
+								At any rate, when you see auroras shining in the sky, that'style
+								what happens when the particles from the Sun flow along the magnetic
+								field lines and interact with Earth'style upper atmosphere.
 							</p>
-						</s.Info_Text>
-						<s.Info_Container_Underline />
-					</s.Info_Container_Div>
-				</s.Info_Container>
-			</s.Section>
+						</style.Info_Text>
+						<style.Info_Container_Underline />
+					</style.Info_Container_Div>
+				</style.Info_Container>
+			</style.Section>
 		</>
 	);
 };

@@ -1,27 +1,27 @@
 import React from "react";
 import EARTH from "../../assets/images/earth.png";
-import * as s from "./homePageFiles/style";
+import * as style from "./homePageFiles/style";
 
 const HomePage = () => {
 	return (
-		<s.Main>
+		<style.Main>
 			<div className="container">
-				<s.Hero_Container>
-					<s.Sub_Header>PLANETS IN OUR</s.Sub_Header>
-					<s.Header>SOLAR SYSTEM</s.Header>
-					<s.Header_Underline />
-					<s.Text>
+				<style.Hero_Container>
+					<style.Sub_Header>PLANETS IN OUR</style.Sub_Header>
+					<style.Header>SOLAR SYSTEM</style.Header>
+					<style.Header_Underline />
+					<style.Text>
 						The Solar System is the gravitationally bound system of the Sun and the
 						objects that orbit it.
-					</s.Text>
-					<s.CTA_Button to="/planets">Start exploring!</s.CTA_Button>
-				</s.Hero_Container>
+					</style.Text>
+					<style.CTA_Button to="/planets">Start exploring!</style.CTA_Button>
+				</style.Hero_Container>
 
-				<s.Planet_Container>
+				<style.Planet_Container>
 					<img src={EARTH} alt="earth" />
-				</s.Planet_Container>
+				</style.Planet_Container>
 			</div>
-		</s.Main>
+		</style.Main>
 	);
 };
 

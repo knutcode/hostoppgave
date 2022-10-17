@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useState } from "react";
 import URANUS from "../../../../../assets/images/uranus.png";
-import * as s from "../../style";
+import * as style from "../../style";
 
 const Uranus = () => {
 	const [active, setActive] = useState("");
@@ -28,26 +28,26 @@ const Uranus = () => {
 
 	return (
 		<>
-			<s.Section id="uranus">
-				<s.Planet_Container>
-					<s.Planet>
-						<s.Img src={URANUS} alt="uranus" />
+			<style.Section id="uranus">
+				<style.Planet_Container>
+					<style.Planet>
+						<style.Img src={URANUS} alt="uranus" />
 
-						<s.Api_Info_Absolute>{api}</s.Api_Info_Absolute>
-						<s.Angled_Line />
-					</s.Planet>
+						<style.Api_Info_Absolute>{api}</style.Api_Info_Absolute>
+						<style.Angled_Line />
+					</style.Planet>
 					<p>
 						Image by &nbsp;
 						<a href="https://www.freepik.com/free-vector/sun-moon-mercury-venus-earth-mars-jupiter-saturn-uranus-neptun-colorful-planets-set_13768792.htm#query=planets&position=23&from_view=keyword">
 							macrovector
 						</a>
 					</p>
-				</s.Planet_Container>
+				</style.Planet_Container>
 
-				<s.Info_Container>
-					<s.Info_Container_Div>
-						<s.Api_Links>
-							<s.Api_Link
+				<style.Info_Container>
+					<style.Info_Container_Div>
+						<style.Api_Links>
+							<style.Api_Link
 								className={active === "temp" ? "active" : ""}
 								onClick={() => {
 									setApi((avgTemp - 273.15).toFixed(1) + " °C");
@@ -55,8 +55,8 @@ const Uranus = () => {
 								}}
 							>
 								Avg.Temp.
-							</s.Api_Link>
-							<s.Api_Link
+							</style.Api_Link>
+							<style.Api_Link
 								className={active === "gravity" ? "active" : ""}
 								onClick={() => {
 									setApi(gravity.toFixed(1) + " m/s²");
@@ -64,8 +64,8 @@ const Uranus = () => {
 								}}
 							>
 								Gravity
-							</s.Api_Link>
-							<s.Api_Link
+							</style.Api_Link>
+							<style.Api_Link
 								className={active === "density" ? "active" : ""}
 								onClick={() => {
 									setApi(density.toFixed(2) + " g/cm³");
@@ -73,11 +73,13 @@ const Uranus = () => {
 								}}
 							>
 								Density
-							</s.Api_Link>
-						</s.Api_Links>
-						<s.Planet_Name>{planetName}</s.Planet_Name>
-						<s.Info_Headline>Uranus is more stormy than we thought.</s.Info_Headline>
-						<s.Info_Text>
+							</style.Api_Link>
+						</style.Api_Links>
+						<style.Planet_Name>{planetName}</style.Planet_Name>
+						<style.Info_Headline>
+							Uranus is more stormy than we thought.
+						</style.Info_Headline>
+						<style.Info_Text>
 							<p>
 								When Voyager 2 flew by the planet in the 1980s, scientists saw a
 								mostly featureless blue ball and some assumed there wasn't much
@@ -100,11 +102,11 @@ const Uranus = () => {
 								And unfortunately, there are no missions yet that are slated for
 								sure to zoom out to that part of the Solar System.
 							</p>
-						</s.Info_Text>
-						<s.Info_Container_Underline />
-					</s.Info_Container_Div>
-				</s.Info_Container>
-			</s.Section>
+						</style.Info_Text>
+						<style.Info_Container_Underline />
+					</style.Info_Container_Div>
+				</style.Info_Container>
+			</style.Section>
 		</>
 	);
 };

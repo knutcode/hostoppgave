@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useState } from "react";
 import SATURN from "../../../../../assets/images/saturn.png";
-import * as s from "../../style";
+import * as style from "../../style";
 
 const Saturn = () => {
 	const [active, setActive] = useState("");
@@ -28,26 +28,26 @@ const Saturn = () => {
 
 	return (
 		<>
-			<s.Section id="saturn">
-				<s.Planet_Container>
-					<s.Planet>
-						<s.Img src={SATURN} alt="saturn" />
+			<style.Section id="saturn">
+				<style.Planet_Container>
+					<style.Planet>
+						<style.Img src={SATURN} alt="saturn" />
 
-						<s.Api_Info_Absolute>{api}</s.Api_Info_Absolute>
-						<s.Angled_Line />
-					</s.Planet>
+						<style.Api_Info_Absolute>{api}</style.Api_Info_Absolute>
+						<style.Angled_Line />
+					</style.Planet>
 					<p>
 						Image by &nbsp;
 						<a href="https://www.freepik.com/free-vector/sun-moon-mercury-venus-earth-mars-jupiter-saturn-uranus-neptun-colorful-planets-set_13768792.htm#query=planets&position=23&from_view=keyword">
 							macrovector
 						</a>
 					</p>
-				</s.Planet_Container>
+				</style.Planet_Container>
 
-				<s.Info_Container>
-					<s.Info_Container_Div>
-						<s.Api_Links>
-							<s.Api_Link
+				<style.Info_Container>
+					<style.Info_Container_Div>
+						<style.Api_Links>
+							<style.Api_Link
 								className={active === "temp" ? "active" : ""}
 								onClick={() => {
 									setApi((avgTemp - 273.15).toFixed(1) + " °C");
@@ -55,8 +55,8 @@ const Saturn = () => {
 								}}
 							>
 								Avg.Temp.
-							</s.Api_Link>
-							<s.Api_Link
+							</style.Api_Link>
+							<style.Api_Link
 								className={active === "gravity" ? "active" : ""}
 								onClick={() => {
 									setApi(gravity.toFixed(1) + " m/s²");
@@ -64,8 +64,8 @@ const Saturn = () => {
 								}}
 							>
 								Gravity
-							</s.Api_Link>
-							<s.Api_Link
+							</style.Api_Link>
+							<style.Api_Link
 								className={active === "density" ? "active" : ""}
 								onClick={() => {
 									setApi(density.toFixed(2) + " g/cm³");
@@ -73,13 +73,15 @@ const Saturn = () => {
 								}}
 							>
 								Density
-							</s.Api_Link>
-						</s.Api_Links>
-						<s.Planet_Name>{planetName}</s.Planet_Name>
-						<s.Info_Headline>No one knows how old Saturn's rings are</s.Info_Headline>
-						<s.Info_Text>
+							</style.Api_Link>
+						</style.Api_Links>
+						<style.Planet_Name>{planetName}</style.Planet_Name>
+						<style.Info_Headline>
+							No one knows how old Saturn'style rings are
+						</style.Info_Headline>
+						<style.Info_Text>
 							<p>
-								There's a field of ice and rock debris circling Saturn that from
+								There'style a field of ice and rock debris circling Saturn that from
 								afar, appear as rings.
 							</p>
 							<br />
@@ -93,19 +95,19 @@ const Saturn = () => {
 							</p>
 							<br />
 							<p>
-								It's possible that a single moon tore apart under Saturn's strong
-								gravity and produced the rings.
+								It'style possible that a single moon tore apart under Saturn'style
+								strong gravity and produced the rings.
 							</p>
 							<p>
 								Or, maybe they've been around (pun intended) for the last few
 								billion years, unable to coalesce into a larger body but resistant
 								enough to gravity not to break up.
 							</p>
-						</s.Info_Text>
-						<s.Info_Container_Underline />
-					</s.Info_Container_Div>
-				</s.Info_Container>
-			</s.Section>
+						</style.Info_Text>
+						<style.Info_Container_Underline />
+					</style.Info_Container_Div>
+				</style.Info_Container>
+			</style.Section>
 		</>
 	);
 };
