@@ -82,7 +82,9 @@ export const Api_Info_Absolute = styled.h4`
 	}
 
 	@media screen and (max-width: 600px) {
-		display: none;
+		left: 9.7rem;
+		top: -2.2rem;
+		font-size: 0.7rem;
 	}
 `;
 
@@ -100,7 +102,9 @@ export const Angled_Line = styled.div`
 	}
 
 	@media screen and (max-width: 600px) {
-		display: none;
+		top: -0.5rem;
+		right: 2rem;
+		width: 1.5rem;
 	}
 `;
 
@@ -142,7 +146,8 @@ export const Api_Links = styled.div`
 	font-family: "Orbitron", sans-serif;
 
 	@media screen and (max-width: 600px) {
-		display: none;
+		font-size: 0.75rem;
+		justify-content: center;
 	}
 `;
 

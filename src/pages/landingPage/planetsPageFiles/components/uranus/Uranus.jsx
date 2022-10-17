@@ -48,15 +48,6 @@ const Uranus = () => {
 					<style.Info_Container_Div>
 						<style.Api_Links>
 							<style.Api_Link
-								className={active === "temp" ? "active" : ""}
-								onClick={() => {
-									setApi((avgTemp - 273.15).toFixed(1) + " °C");
-									setActive("temp");
-								}}
-							>
-								Avg.Temp.
-							</style.Api_Link>
-							<style.Api_Link
 								className={active === "gravity" ? "active" : ""}
 								onClick={() => {
 									setApi(gravity.toFixed(1) + " m/s²");
@@ -64,6 +55,15 @@ const Uranus = () => {
 								}}
 							>
 								Gravity
+							</style.Api_Link>
+							<style.Api_Link
+								className={active === "temp" ? "active" : ""}
+								onClick={() => {
+									setApi((avgTemp - 273.15).toFixed(1) + " °C");
+									setActive("temp");
+								}}
+							>
+								Avg.Temp.
 							</style.Api_Link>
 							<style.Api_Link
 								className={active === "density" ? "active" : ""}
