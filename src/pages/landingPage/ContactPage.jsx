@@ -5,16 +5,21 @@ import * as style from "./contactPageFiles/style";
 import SubmitForm from "./contactPageFiles/Submit";
 
 const ContactPage = () => {
-	const [isDesktop, setDesktop] = useState(window.innerWidth > 1090);
+	const [isDesktop, setDesktop] = useState("");
 
 	const updateMedia = () => {
 		setDesktop(window.innerWidth > 600);
 	};
 
 	useEffect(() => {
+		updateMedia();
+	}, []);
+
+	useEffect(() => {
 		window.addEventListener("resize", updateMedia);
 		return () => window.removeEventListener("resize", updateMedia);
 	});
+
 	return (
 		<section>
 			<div className="container">
