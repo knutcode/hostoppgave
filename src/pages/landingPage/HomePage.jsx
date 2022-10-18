@@ -21,6 +21,22 @@ const HomePage = () => {
 					<img src={EARTH} alt="earth" />
 				</style.Planet_Container>
 			</div>
+			<style.Contribution>
+				Made by:
+				<a href="https://github.com/knutcode" target="_blank" rel="noreferrer noopener">
+					Knut
+				</a>
+				<a href="https://github.com/SondreHal" target="_blank" rel="noreferrer noopener">
+					Sondre
+				</a>
+				<a
+					href="https://github.com/AlexanderKodehode"
+					target="_blank"
+					rel="noreferrer noopener"
+				>
+					Aleksander
+				</a>
+			</style.Contribution>
 		</style.Main>
 	);
 };

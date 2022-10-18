@@ -112,3 +112,20 @@ export const Planet_Container = styled.div`
 		width: 90%;
 	}
 `;
+
+export const Contribution = styled.small`
+	position: absolute;
+	display: flex;
+	gap: 1rem;
+	bottom: 1rem;
+	left: 1rem;
+
+	& a {
+		color: var(--color-primary);
+		transition: var(--transition);
+
+		&:hover {
+			color: var(--color-white);
+		}
+	}
+`;
