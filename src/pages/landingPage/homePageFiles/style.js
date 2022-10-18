@@ -5,6 +5,13 @@ import "../../../assets/Global.css";
 export const Main = styled.main`
 	overflow: hidden;
 	height: 100vh;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+
+	@media screen and (max-width: 600px) {
+		height: initial;
+	}
 `;
 
 export const Hero_Container = styled.div`
@@ -127,5 +134,19 @@ export const Contribution = styled.small`
 		&:hover {
 			color: var(--color-white);
 		}
+	}
+
+	@media screen and (max-width: 1300px) {
+		top: 6rem;
+		left: 5%;
+		bottom: initial;
+	}
+
+	@media screen and (max-width: 600px) {
+		white-space: nowrap;
+		bottom: 0.5rem;
+		margin: 1rem auto 0.5rem;
+		top: initial;
+		position: initial;
 	}
 `;
