@@ -1,6 +1,6 @@
-function SubmitForm() {
-	if (alert("Your mail has been submitted!")) {
-	} else window.location.reload();
+function SubmitForm(e) {
+	e.target.reset();
+	alert("Your mail has been submitted!");
 }
 
 export default SubmitForm;

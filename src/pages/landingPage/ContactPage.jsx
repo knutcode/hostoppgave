@@ -25,12 +25,12 @@ const ContactPage = () => {
 			<div className="container">
 				<style.Container>
 					{/* Delen hvor vi lager boxen som man kan skriv inn i */}
-					<style.Form_Container>
-						<style.Name_Email type="text" placeholder="Name" />
-						<style.Name_Email type="email" placeholder="Mail" />
-						<style.Comment placeholder="Comment" />
+					<style.Form_Container onSubmit={SubmitForm}>
+						<style.Name_Email type="text" placeholder="Name" required />
+						<style.Name_Email type="email" placeholder="Mail" required />
+						<style.Comment placeholder="Comment" required />
 						<br />
-						<style.Submit_Btn onClick={SubmitForm}>Submit</style.Submit_Btn>
+						<style.Submit_Btn type="submit">Submit</style.Submit_Btn>
 					</style.Form_Container>
 
 					<style.Contact_Container>

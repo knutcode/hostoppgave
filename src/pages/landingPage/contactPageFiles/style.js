@@ -26,7 +26,7 @@ export const Container = styled.div`
 //    FORM CONTAINER
 //
 ////////////////////////////////////////////////////////////////////////////////////////////
-export const Form_Container = styled.div`
+export const Form_Container = styled.form`
 	max-width: 500px;
 	margin-top: 5rem;
 
