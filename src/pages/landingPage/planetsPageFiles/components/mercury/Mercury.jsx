@@ -76,32 +76,23 @@ const Mercury = () => {
 							</style.Api_Link>
 						</style.Api_Links>
 						<style.Planet_Name>{planetName}</style.Planet_Name>
-						<style.Info_Headline>
-							Mercury is hot, but not too hot for ice
-						</style.Info_Headline>
+						<style.Info_Headline>Mercury is hot, but not too hot for ice</style.Info_Headline>
 						<style.Info_Text>
+							<p>The closest planet to the Sun does indeed have ice on its surface. </p>
 							<p>
-								The closest planet to the Sun does indeed have ice on its surface.{" "}
+								That sounds surprising at first glance, but the ice is found in permanently shadowed craters — those that
+								never receive any sunlight.
 							</p>
+							<br />
+							<p>It is thought that perhaps comets delivered this ice to Mercury in the first place.</p>
 							<p>
-								That sounds surprising at first glance, but the ice is found in
-								permanently shadowed craters — those that never receive any
-								sunlight.
+								In fact, NASA's MESSENGER spacecraft not only found ice at the north pole, but it also found organics, which
+								are the building blocks for life.
 							</p>
 							<br />
 							<p>
-								It is thought that perhaps comets delivered this ice to Mercury in
-								the first place.
-							</p>
-							<p>
-								In fact, NASA'style MESSENGER spacecraft not only found ice at the
-								north pole, but it also found organics, which are the building
-								blocks for life.
-							</p>
-							<br />
-							<p>
-								Mercury is way too hot and airless for life as we know it, but it
-								shows how these elements are distributed across the Solar System.
+								Mercury is way too hot and airless for life as we know it, but it shows how these elements are distributed
+								across the Solar System.
 							</p>
 						</style.Info_Text>
 						<style.Info_Container_Underline />

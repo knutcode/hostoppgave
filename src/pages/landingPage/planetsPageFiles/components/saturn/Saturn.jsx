@@ -76,32 +76,23 @@ const Saturn = () => {
 							</style.Api_Link>
 						</style.Api_Links>
 						<style.Planet_Name>{planetName}</style.Planet_Name>
-						<style.Info_Headline>
-							No one knows how old Saturn'style rings are
-						</style.Info_Headline>
+						<style.Info_Headline>No one knows how old Saturn's rings are</style.Info_Headline>
 						<style.Info_Text>
-							<p>
-								There'style a field of ice and rock debris circling Saturn that from
-								afar, appear as rings.
-							</p>
+							<p>There's a field of ice and rock debris circling Saturn that from afar, appear as rings.</p>
 							<br />
 							<p>
-								Early telescope observations of the planet in the 1600s caused some
-								confusion: does that planet have ears, or moons, or what?
+								Early telescope observations of the planet in the 1600s caused some confusion: does that planet have ears, or
+								moons, or what?
 							</p>
 							<p>
-								With better resolution, however, it soon became clear that there was
-								a chain of small bodies encircling the gas giant.
+								With better resolution, however, it soon became clear that there was a chain of small bodies encircling the
+								gas giant.
 							</p>
 							<br />
+							<p>It's possible that a single moon tore apart under Saturn's strong gravity and produced the rings.</p>
 							<p>
-								It'style possible that a single moon tore apart under Saturn'style
-								strong gravity and produced the rings.
-							</p>
-							<p>
-								Or, maybe they've been around (pun intended) for the last few
-								billion years, unable to coalesce into a larger body but resistant
-								enough to gravity not to break up.
+								Or, maybe they've been around (pun intended) for the last few billion years, unable to coalesce into a larger
+								body but resistant enough to gravity not to break up.
 							</p>
 						</style.Info_Text>
 						<style.Info_Container_Underline />

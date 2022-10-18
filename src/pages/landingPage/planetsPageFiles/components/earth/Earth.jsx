@@ -77,26 +77,21 @@ const Earth = () => {
 							</style.Api_Link>
 						</style.Api_Links>
 						<style.Planet_Name>{planetName}</style.Planet_Name>
-						<style.Info_Headline>
-							You can see Earth'style magnetic field at work during light shows.
-						</style.Info_Headline>
+						<style.Info_Headline>You can see Earth's magnetic field at work during light shows.</style.Info_Headline>
 						<style.Info_Text>
 							<p>
-								We have a magnetic field surrounding our planet that protects us
-								from the blasts of radiation and particles the Sun sends our way.
+								We have a magnetic field surrounding our planet that protects us from the blasts of radiation and particles
+								the Sun sends our way.
 							</p>
 							<br />
 							<p>
-								Good thing, too, because such flare-ups could prove deadly to
-								unprotected people; that'style why NASA keeps an eye on solar
-								activity for astronauts on the International Space Station, for
-								example.
+								Good thing, too, because such flare-ups could prove deadly to unprotected people; that's why NASA keeps an
+								eye on solar activity for astronauts on the International Space Station, for example.
 							</p>
 							<br />
 							<p>
-								At any rate, when you see auroras shining in the sky, that'style
-								what happens when the particles from the Sun flow along the magnetic
-								field lines and interact with Earth'style upper atmosphere.
+								At any rate, when you see auroras shining in the sky, that's what happens when the particles from the Sun
+								flow along the magnetic field lines and interact with Earth's upper atmosphere.
 							</p>
 						</style.Info_Text>
 						<style.Info_Container_Underline />

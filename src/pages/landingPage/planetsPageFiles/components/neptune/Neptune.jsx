@@ -79,21 +79,17 @@ const Neptune = () => {
 						<style.Info_Headline>Neptune has supersonic winds. </style.Info_Headline>
 						<style.Info_Text>
 							<p>
-								While on Earth we are concerned about hurricanes, the strength of
-								these storms is nowhere near what you would find on Neptune.
+								While on Earth we are concerned about hurricanes, the strength of these storms is nowhere near what you would
+								find on Neptune.
 							</p>
 							<p>
-								At its highest altitudes, according to NASA, winds blow at more than
-								1,100 miles per hour (1,770 kilometers per hour).
+								At its highest altitudes, according to NASA, winds blow at more than 1,100 miles per hour (1,770 kilometers
+								per hour).
 							</p>
-							<p>
-								To put that in context, that'style faster than the speed of sound on
-								Earth, at sea level.
-							</p>
+							<p>To put that in context, that's' faster than the speed of sound on Earth, at sea level.</p>
 							<br />
 							<p>
-								Why Neptune is so blustery is a mystery, especially considering the
-								Sun'style heat is so little at its distance.
+								Why Neptune is so blustery is a mystery, especially considering the Sun's' heat is so little at its distance.
 							</p>
 						</style.Info_Text>
 						<style.Info_Container_Underline />

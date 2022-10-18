@@ -76,28 +76,20 @@ const Mars = () => {
 							</style.Api_Link>
 						</style.Api_Links>
 						<style.Planet_Name>{planetName}</style.Planet_Name>
-						<style.Info_Headline>
-							Mars had a thicker atmosphere in the past.
-						</style.Info_Headline>
+						<style.Info_Headline>Mars had a thicker atmosphere in the past.</style.Info_Headline>
 						<style.Info_Text>
 							<p>
-								What a bunch of contrasts in the inner Solar System: practically
-								atmosphere-less Mercury, a runaway hothouse greenhouse effect
-								happening in Venus' thick atmosphere, temperate conditions on much
-								of Earth and then a thin atmosphere on Mars.
+								What a bunch of contrasts in the inner Solar System: practically atmosphere-less Mercury, a runaway hothouse
+								greenhouse effect happening in Venus' thick atmosphere, temperate conditions on much of Earth and then a thin
+								atmosphere on Mars.
 							</p>
 							<br />
-							<p>
-								But look at the planet and you can see gullies carved in the past
-								from probable water.
-							</p>
+							<p>But look at the planet and you can see gullies carved in the past from probable water.</p>
 							<p>Water requires more atmosphere, so Mars had more in the past.</p>
 							<br />
 							<p>
-								Where did it go? Some scientists believe it'style because the
-								Sun'style energy pushed the lighter molecules out of Mars'
-								atmosphere over millions of years, decreasing the thickness over
-								time.
+								Where did it go? Some scientists believe it's because the Sun's energy pushed the lighter molecules out of
+								Mars' atmosphere over millions of years, decreasing the thickness over time.
 							</p>
 						</style.Info_Text>
 						<style.Info_Container_Underline />

@@ -76,25 +76,22 @@ const Venus = () => {
 							</style.Api_Link>
 						</style.Api_Links>
 						<style.Planet_Name>{planetName}</style.Planet_Name>
-						<style.Info_Headline>
-							Venus doesn't have any moons, and we aren't sure why.
-						</style.Info_Headline>
+						<style.Info_Headline>Venus doesn't have any moons, and we aren't sure why.</style.Info_Headline>
 						<style.Info_Text>
 							<p>
-								Both Mercury and Venus have no moons, which can be considered a
-								surprise given there are dozens of other ones around the Solar
-								System.
+								Both Mercury and Venus have no moons, which can be considered a surprise given there are dozens of other ones
+								around the Solar System.
 							</p>
 							<p>Saturn has over 60, for example.</p>
 							<p>
-								And some moons are little more than captured asteroids, which may
-								have been what happened with Mars' two moons, for example.
+								And some moons are little more than captured asteroids, which may have been what happened with Mars' two
+								moons, for example.
 							</p>
 							<br />
 							<p>So what makes these planets different?</p>
 							<p>
-								No one is really sure why Venus doesn't, but there is at least one
-								stream of research that suggests it could have had one in the past.
+								No one is really sure why Venus doesn't, but there is at least one stream of research that suggests it could
+								have had one in the past.
 							</p>
 						</style.Info_Text>
 						<style.Info_Container_Underline />
